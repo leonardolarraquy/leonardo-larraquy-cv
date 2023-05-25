@@ -623,6 +623,7 @@ img
 .project__img
 {
     width: 220px;
+    height: 280px;
     justify-self: center;
 }
 
