@@ -60,6 +60,24 @@
     box-sizing: border-box;
 }
 
+/* Skip Link for Accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--first-color);
+    color: var(--first-color-lighten);
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 1000;
+    font-weight: var(--font-semi-bold);
+}
+
+.skip-link:focus {
+    top: 6px;
+}
+
 html
 {
     scroll-behavior: smooth;
@@ -235,6 +253,8 @@ img
 {
     height: calc(100vh - var(--header-height));
     align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
 }
 
 .home__data
@@ -244,6 +264,28 @@ img
     align-items: center;
     height: max-content;
     text-align: center;
+}
+
+.home__career
+{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+
+.career__title
+{
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin-bottom: var(--mb-3);
+    text-align: center;
+}
+
+.career__timeline
+{
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 1rem;
 }
 
 .home__img
@@ -550,6 +592,14 @@ img
     text-align: center;
 }
 
+.certification-image
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
 .service__icon
 {
     font-size: 2rem;
@@ -625,6 +675,22 @@ img
     width: 220px;
     height: 280px;
     justify-self: center;
+}
+
+.project__cta
+{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.project__cta .button
+{
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
 }
 
 /* ------------------------------ Works ----------------------------- */
@@ -778,9 +844,66 @@ img
     color: var(--text-color);
 }
 
+/* ------------------------- Media Queries for mobile screen ---------------------------- */
+@media screen and (max-width: 480px)
+{
+    .home__container
+    {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        height: auto;
+        padding: 2rem 0;
+    }
+    
+    .career__timeline
+    {
+        max-height: 50vh;
+    }
+    
+    .project__cta
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .project__cta .button
+    {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .home__img
+    {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .home__img img
+    {
+        width: 230px;
+        height: 230px;
+    }
+    
+    .section-title
+    {
+        font-size: 1.5rem;
+    }
+    
+    .services__container
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ------------------------- Media Queries for tablet screen ---------------------------- */
 @media screen and (min-width: 786px)
 {
+    .home__container
+    {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    
     .home__button
     {
         width: initial;
