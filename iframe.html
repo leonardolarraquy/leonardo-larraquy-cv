@@ -193,5 +193,30 @@ body { font-family: arial,helvetica,sans-serif; font-size: 1rem; line-height: 1.
 
   </div>
 
+  <!-- Google tag (gtag.js) event -->
+  <script>
+    // Interceptar el envío del formulario de contacto
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.querySelector('form[action*="ContactServlet"]');
+      if (form) {
+        form.addEventListener('submit', function(event) {
+          // Disparar evento de Google Analytics
+          if (window.parent && typeof window.parent.gtag === 'function') {
+            console.log('✅ Formulario enviado - Disparando evento Google Analytics');
+            window.parent.gtag('event', 'conversion_event_contact_2', {
+              // <event_parameters>
+            });
+            console.log('✅ Evento conversion_event_contact_2 enviado a Google Analytics');
+          } else {
+            console.error('❌ Error: window.parent.gtag no está disponible');
+          }
+          // Permitir que el formulario se envíe normalmente (no prevenir el comportamiento por defecto)
+        });
+      } else {
+        console.warn('⚠️ Formulario no encontrado');
+      }
+    });
+  </script>
+
   </body>
 </html>
