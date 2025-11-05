@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cloud Experts - Expertos en AWS, Java, DevOps | Consultoría IT Profesional Argentina</title>
     <meta name="description" content="Cloud Experts: Consultoría especializada en AWS, desarrollo Java, DevOps y migración a la nube. 20+ años de experiencia. Servicios profesionales de IT en Argentina. Arquitectura cloud, desarrollo de sistemas, capacitación AWS.">
-    <meta name="keywords" content="cloud experts, aws argentina, consultoría aws, desarrollo java, devops argentina, migración cloud, arquitectura aws, java developer, aws certified, cloud consulting, it consulting argentina, desarrollo sistemas, aws training, cloud migration, aws solutions architect">
+    <meta name="keywords" content="cloud experts, aws argentina, consultoría aws, desarrollo java, devops argentina, migración cloud, arquitectura aws, java developer, aws certified, cloud consulting, it consulting argentina, desarrollo sistemas, aws training, cloud migration, aws solutions architect, aws cloudformation, oracle cloud infrastructure, oci, wordpress, rabbitmq, mysql, oracle database, sql server, tableau, git, linux, docker, spring, spring boot, microservices, ci cd, kubernetes, python, django, j2ee, hibernate, stored procedures">
     <meta name="author" content="Cloud Experts - Consultoría IT Profesional">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
@@ -20,28 +20,60 @@
     <meta property="og:url" content="https://cloudexperts.com.ar/">
     <meta property="og:title" content="Cloud Experts - Expertos en AWS, Java, DevOps | Consultoría IT Profesional">
     <meta property="og:description" content="Consultoría especializada en AWS, desarrollo Java, DevOps y migración a la nube. 20+ años de experiencia. Servicios profesionales de IT en Argentina.">
+    <meta property="og:image" content="https://cloudexperts.com.ar/img/cloud-experts-og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Cloud Experts - Consultoría AWS y Desarrollo Java Profesional">
     <meta property="og:site_name" content="Cloud Experts">
     <meta property="og:locale" content="es_AR">
+    <meta property="og:locale:alternate" content="es_ES">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://cloudexperts.com.ar/">
-    <meta property="twitter:title" content="Cloud Experts - Expertos en AWS, Java, DevOps">
-    <meta property="twitter:description" content="Consultoría especializada en AWS, desarrollo Java, DevOps y migración a la nube. 20+ años de experiencia.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cloudexperts.com.ar/">
+    <meta name="twitter:title" content="Cloud Experts - Expertos en AWS, Java, DevOps">
+    <meta name="twitter:description" content="Consultoría especializada en AWS, desarrollo Java, DevOps y migración a la nube. 20+ años de experiencia.">
+    <meta name="twitter:image" content="https://cloudexperts.com.ar/img/cloud-experts-og.jpg">
+    <meta name="twitter:image:alt" content="Cloud Experts - Consultoría AWS y Desarrollo Java Profesional">
+
+    <!-- Mobile & App -->
+    <meta name="theme-color" content="#3b82f6">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Cloud Experts">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://cloudexperts.com.ar/">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%233b82f6'%3E%3Cpath d='M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z'/%3E%3C/svg%3E">
-    <link rel="alternate icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%233b82f6'%3E%3Cpath d='M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z'/%3E%3C/svg%3E" type="image/svg+xml">
+    <!-- Performance Optimization -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    
+    <!-- Favicon - Múltiples tamaños para Google y navegadores -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- Fallback para navegadores antiguos -->
+    <link rel="shortcut icon" href="/favicon.ico">
 
-    <!-- Structured Data -->
+    <!-- Structured Data - Organization -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Cloud Experts",
+      "logo": "https://cloudexperts.com.ar/favicon-512x512.png",
+      "image": "https://cloudexperts.com.ar/favicon-512x512.png",
       "description": "Consultoría especializada en AWS, desarrollo Java, DevOps y migración a la nube con más de 20 años de experiencia",
       "url": "https://cloudexperts.com.ar",
       "email": "info@cloudexperts.com.ar",
@@ -95,6 +127,363 @@
     }
     </script>
 
+    <!-- Structured Data - LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://cloudexperts.com.ar/#business",
+      "name": "Cloud Experts",
+      "logo": "https://cloudexperts.com.ar/favicon-512x512.png",
+      "image": "https://cloudexperts.com.ar/img/cloud-experts-og.jpg",
+      "description": "Consultoría IT especializada en AWS, desarrollo Java y DevOps en Argentina",
+      "url": "https://cloudexperts.com.ar",
+      "telephone": "+54-9-11-6709-8413",
+      "email": "info@cloudexperts.com.ar",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Escobar",
+        "addressRegion": "Buenos Aires",
+        "postalCode": "1625",
+        "addressCountry": "AR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-34.3478",
+        "longitude": "-58.7917"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00",
+        "timeZone": "America/Argentina/Buenos_Aires"
+      },
+      "priceRange": "$$",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Argentina"
+      }
+    }
+    </script>
+
+    <!-- Structured Data - Person (Professional Profile) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://cloudexperts.com.ar/#person",
+      "name": "Leonardo Larraquy",
+      "jobTitle": "Arquitecto Cloud AWS & Desarrollador Java Senior",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Cloud Experts"
+      },
+      "description": "Arquitecto Cloud AWS certificado con más de 20 años de experiencia en desarrollo Java, DevOps y migración a la nube",
+      "url": "https://cloudexperts.com.ar",
+      "email": "info@cloudexperts.com.ar",
+      "telephone": "+54-9-11-6709-8413",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Escobar",
+        "addressRegion": "Buenos Aires",
+        "addressCountry": "Argentina"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Universidad Tecnológica Nacional"
+      },
+      "knowsAbout": [
+        "Amazon Web Services",
+        "AWS CloudFormation",
+        "Java Development",
+        "DevOps",
+        "Cloud Architecture",
+        "Oracle Cloud Infrastructure",
+        "OCI",
+        "Spring Framework",
+        "Spring Boot",
+        "Microservices",
+        "Docker",
+        "Kubernetes",
+        "CI/CD",
+        "Scrum",
+        "MySQL",
+        "Oracle Database",
+        "SQL Server",
+        "Tableau",
+        "Git",
+        "Linux",
+        "WordPress",
+        "RabbitMQ",
+        "Python",
+        "Django",
+        "J2EE",
+        "Hibernate"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Professional Certification",
+          "name": "AWS Certified Solutions Architect - Associate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Amazon Web Services"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Professional Certification",
+          "name": "Oracle Certified Professional, Java SE Developer",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Oracle"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Professional Certification",
+          "name": "Certified Scrum Master",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Scrum Alliance"
+          }
+        }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/leonardolarraquy/",
+        "https://www.upwork.com/freelancers/leonardol25"
+      ]
+    }
+    </script>
+
+    <!-- Structured Data - ProfessionalService -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Cloud Experts - Consultoría IT Profesional",
+      "description": "Servicios profesionales de consultoría en AWS, desarrollo Java y DevOps",
+      "url": "https://cloudexperts.com.ar",
+      "telephone": "+54-9-11-6709-8413",
+      "email": "info@cloudexperts.com.ar",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Escobar",
+        "addressRegion": "Buenos Aires",
+        "addressCountry": "Argentina"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Argentina"
+      },
+      "serviceType": [
+        "Cloud Computing Consulting",
+        "AWS Architecture",
+        "Java Development",
+        "DevOps Consulting",
+        "Cloud Migration",
+        "IT Training"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de Consultoría IT",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Arquitectura AWS",
+              "description": "Diseño e implementación de soluciones escalables en Amazon Web Services",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Cloud Experts"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Desarrollo Java",
+              "description": "Desarrollo de aplicaciones empresariales con Java y frameworks modernos",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Cloud Experts"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "DevOps as a Service",
+              "description": "Optimización de procesos de desarrollo y operaciones",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Cloud Experts"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Capacitación AWS",
+              "description": "Cursos personalizados y formación en equipo sobre Amazon Web Services",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Cloud Experts"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Migración a la Nube",
+              "description": "Asesoramiento y ejecución de migraciones de infraestructura a AWS",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Cloud Experts"
+              }
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
+    <!-- Structured Data - Course (for Training Services) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Capacitación en Amazon Web Services (AWS)",
+      "description": "Cursos personalizados de AWS diseñados para equipos y empresas. Capacitación práctica en arquitectura cloud, servicios AWS y mejores prácticas.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Cloud Experts",
+        "url": "https://cloudexperts.com.ar"
+      },
+      "courseCode": "AWS-TRAINING",
+      "educationalLevel": "Professional",
+      "coursePrerequisites": "Conocimientos básicos de infraestructura IT",
+      "teaches": [
+        "Amazon Web Services",
+        "Cloud Architecture",
+        "EC2",
+        "S3",
+        "Lambda",
+        "RDS",
+        "CloudFormation",
+        "AWS Security"
+      ],
+      "inLanguage": "es",
+      "availableLanguage": "Spanish",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Profesionales IT y equipos de desarrollo"
+      }
+    }
+    </script>
+
+    <!-- Structured Data - FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué servicios ofrece Cloud Experts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cloud Experts ofrece servicios especializados en arquitectura AWS, desarrollo Java, DevOps as a Service, capacitación en AWS, migración a la nube y optimización de costos. Contamos con más de 20 años de experiencia en proyectos IT empresariales."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Dónde está ubicado Cloud Experts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cloud Experts está ubicado en Escobar, Buenos Aires, Argentina, pero brindamos servicios de consultoría remota a empresas de toda Argentina y Latinoamérica."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué certificaciones tiene Cloud Experts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cloud Experts cuenta con certificaciones AWS Certified Solutions Architect - Associate, Oracle Certified Professional Java SE Developer, Certified Scrum Master, Docker Essentials, ITIL Foundation, Google Analytics, Google Ads y más."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Ofrecen consultoría gratuita?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, ofrecemos una consultoría inicial gratuita sin compromiso para evaluar las necesidades de su proyecto y proponer la mejor solución cloud."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué tecnologías manejan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trabajamos con AWS (EC2, S3, Lambda, RDS, CloudFormation), Java (Spring, Spring Boot, J2EE), DevOps (Docker, Kubernetes, CI/CD), bases de datos (Oracle, PostgreSQL, MySQL), y herramientas de monitoreo y análisis."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Structured Data - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://cloudexperts.com.ar/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Servicios",
+          "item": "https://cloudexperts.com.ar/#servicios"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tecnologías",
+          "item": "https://cloudexperts.com.ar/#tecnologias"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Certificaciones",
+          "item": "https://cloudexperts.com.ar/#certificaciones"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Contacto",
+          "item": "https://cloudexperts.com.ar/#contacto"
+        }
+      ]
+    }
+    </script>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-71DZEPD7QH"></script>
 <script>
@@ -107,7 +496,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
     <style>
         * {
             font-family: 'Inter', sans-serif;
@@ -171,22 +561,25 @@
         }
         
         .glass-effect {
-            background: rgba(255, 255, 255, 0.1);
+            background: linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.15));
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255,255,255,0.35);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
         }
         
         .tech-card {
             transition: all 0.3s ease;
-            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+            background: linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.15));
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.35);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
         }
         
         .tech-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+            box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+            background: linear-gradient(135deg, rgba(255,255,255,0.35), rgba(255,255,255,0.25));
+            border-color: rgba(255,255,255,0.45);
         }
         
         .hero-gradient {
@@ -225,6 +618,235 @@
             transform: scale(1.05);
             box-shadow: 0 15px 30px rgba(0,0,0,0.1);
         }
+        
+        /* Scroll Reveal Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        
+        .reveal-left.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        
+        .reveal-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .reveal-scale {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        
+        .reveal-scale.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+        /* Animated Counter */
+        .counter {
+            font-variant-numeric: tabular-nums;
+        }
+        
+        /* Enhanced Card Hover Effects */
+        .tech-card-3d {
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            transform-style: preserve-3d;
+            background: linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.15));
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.35);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+        }
+        
+        .tech-card-3d:hover {
+            transform: translateY(-15px) rotateX(5deg) rotateY(5deg);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+            background: linear-gradient(135deg, rgba(255,255,255,0.35), rgba(255,255,255,0.25));
+            border-color: rgba(255,255,255,0.45);
+        }
+        
+        /* Particles Background */
+        #particles-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        main {
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Active Navigation Indicator */
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #1e40af);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+        
+        /* Enhanced Form Inputs */
+        .form-input {
+            transition: all 0.3s ease;
+        }
+        
+        .form-input:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+        }
+        
+        .form-input:invalid:not(:placeholder-shown) {
+            border-color: #ef4444;
+            animation: shake 0.5s;
+        }
+        
+        .form-input:valid:not(:placeholder-shown) {
+            border-color: #10b981;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+        
+        /* Cursor Trail Effect */
+        .cursor-trail {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.5), transparent);
+            pointer-events: none;
+            z-index: 9999;
+            mix-blend-mode: difference;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        /* Loading Animation */
+        @keyframes shimmer {
+            0% { background-position: -1000px 0; }
+            100% { background-position: 1000px 0; }
+        }
+        
+        /* Tab Navigation */
+        .tab-container {
+            display: none;
+        }
+        
+        .tab-container.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        .tab-button {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .tab-button.active {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(30, 64, 175, 0.2));
+            border-color: rgba(59, 130, 246, 0.5);
+        }
+        
+        .tab-button.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #3b82f6, #1e40af);
+            border-radius: 2px;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Section Divider */
+        .section-divider {
+            height: 200px;
+            background: linear-gradient(180deg, transparent, rgba(59, 130, 246, 0.1), transparent);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .section-divider::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.2), transparent);
+            border-radius: 50%;
+            animation: pulse-divider 3s ease-in-out infinite;
+        }
+        
+        @keyframes pulse-divider {
+            0%, 100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.5;
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.5);
+                opacity: 0.2;
+            }
+        }
     </style>
 
 <!-- Google tag (gtag.js) event - delayed navigation helper -->
@@ -248,7 +870,7 @@
 
 
 </head>
-<body class="gradient-bg text-white min-h-screen">
+<body class="gradient-bg text-slate-800 min-h-screen">
     <header class="fixed top-0 left-0 right-0 z-50 glass-effect border-b border-white/20">
         <nav class="container mx-auto px-4 h-16 flex items-center justify-between">
             <a href="#" class="flex items-center group">
@@ -257,55 +879,56 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
                     </svg>
                 </div>
-                <span class="text-xl font-bold text-white group-hover:text-blue-200 transition-colors">Cloud Experts</span>
+                <span class="text-xl font-bold text-slate-800 group-hover:text-blue-600 transition-colors">Cloud Experts</span>
             </a>
             <div class="hidden md:flex items-center space-x-8">
-                <a href="#servicios" class="text-sm text-white/90 hover:text-white transition-colors font-medium">Servicios</a>
-                <a href="#experiencia" class="text-sm text-white/90 hover:text-white transition-colors font-medium">Experiencia</a>
-                <a href="#tecnologias" class="text-sm text-white/90 hover:text-white transition-colors font-medium">Tecnologías</a>
+                <a href="#servicios" class="nav-link text-sm text-slate-700 hover:text-slate-900 transition-colors font-medium">Servicios</a>
+                <a href="#tecnologias" class="nav-link text-sm text-slate-700 hover:text-slate-900 transition-colors font-medium">Tecnologías</a>
+                <a href="#certificaciones" class="nav-link text-sm text-slate-700 hover:text-slate-900 transition-colors font-medium">Certificaciones</a>
+                <a href="#clientes" class="nav-link text-sm text-slate-700 hover:text-slate-900 transition-colors font-medium">Clientes</a>
                 <a href="#contacto" class="btn-primary text-white px-6 py-2 rounded-lg font-semibold">Contactar</a>
             </div>
         </nav>
     </header>
 
     <div class="hidden">
-        AWS architect, Arquitecto AWS, Java developer, CTO freelance, IT freelance, Cloud Experts, EC2, AWS, AWS Lambda, AWS Serverless, AWS Backup, AWS S3, AWS DNS, Route 53, AWS Auto Scaling, Spring Developer, Springboot developer, Stored Procedures, SQL developer, Scrum Master, Experto cloud, Cloud consulting, J2EE, Hibernate
+        AWS architect, Arquitecto AWS, Java developer, CTO freelance, IT freelance, Cloud Experts, EC2, AWS, AWS Lambda, AWS Serverless, AWS Backup, AWS S3, AWS DNS, Route 53, AWS Auto Scaling, AWS CloudFormation, Oracle Cloud Infrastructure, OCI, WordPress, RabbitMQ, Spring Developer, Springboot developer, Stored Procedures, SQL developer, MySQL, Oracle Database, SQL Server, Tableau, Git, Linux, Docker, Scrum Master, Experto cloud, Cloud consulting, J2EE, Hibernate, Python, Django, Kubernetes, CI/CD, Microservices
     </div>
 
     <main class="pt-16">
         <section class="pt-32 pb-16 px-4 container mx-auto min-h-screen flex flex-col md:flex-row items-center justify-between">
             <div class="flex-1 space-y-8 text-center md:text-left">
                 <div class="space-y-4">
-                    <h1 class="text-5xl md:text-7xl font-black leading-tight text-white">
+                    <h1 class="text-5xl md:text-7xl font-black leading-tight text-slate-800 reveal">
                         <span class="text-gradient">Cloud Experts</span>
                     </h1>
-                    <h2 class="text-3xl md:text-5xl font-bold leading-tight text-white/90">
-                        Expertos en <span class="text-yellow-300">AWS</span> y <span class="text-green-300">Desarrollo Java</span>
+                    <h2 class="text-3xl md:text-5xl font-bold leading-tight text-slate-700 reveal">
+                        Expertos en <span class="text-yellow-500">AWS</span> y <span class="text-green-600">Desarrollo Java</span>
                     </h2>
-                    <h3 class="text-2xl md:text-3xl font-semibold text-white/80">
+                    <h3 class="text-2xl md:text-3xl font-semibold text-slate-600 reveal">
                         Consultoría IT Profesional en Argentina
                     </h3>
                 </div>
-                <p class="text-xl text-white/80 max-w-2xl leading-relaxed">
-                    <strong>20+ años de experiencia</strong> liderando equipos de desarrollo y gestionando proyectos de migración a la nube. 
+                <p class="text-xl text-slate-700 max-w-2xl leading-relaxed reveal">
+                    <strong><span class="counter" data-target="20">20</span>+ años de experiencia</strong> liderando equipos de desarrollo y gestionando proyectos de migración a la nube. 
                     Optimizamos tu infraestructura AWS y aceleramos tus desarrollos con las mejores prácticas de la industria.
                 </p>
                 <div class="flex flex-col md:flex-row gap-6 justify-center md:justify-start">
                     <a href="#contacto" class="btn-primary text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg">Solicitar Consultoría Gratuita</a>
-                    <a href="#servicios" class="glass-effect text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white/20 transition-all">Ver Servicios</a>
+                    <a href="#servicios" class="glass-effect text-slate-800 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white/40 transition-all">Ver Servicios</a>
                 </div>
                 <div class="flex flex-wrap gap-4 justify-center md:justify-start mt-8">
                     <div class="glass-effect px-4 py-2 rounded-lg">
-                        <span class="text-sm font-semibold text-white/90">✓ AWS Certified</span>
+                        <span class="text-sm font-semibold text-slate-700">✓ AWS Certified</span>
                     </div>
                     <div class="glass-effect px-4 py-2 rounded-lg">
-                        <span class="text-sm font-semibold text-white/90">✓ Java Expert</span>
+                        <span class="text-sm font-semibold text-slate-700">✓ Java Expert</span>
                     </div>
                     <div class="glass-effect px-4 py-2 rounded-lg">
-                        <span class="text-sm font-semibold text-white/90">✓ DevOps Specialist</span>
+                        <span class="text-sm font-semibold text-slate-700">✓ DevOps Specialist</span>
                     </div>
                     <div class="glass-effect px-4 py-2 rounded-lg">
-                        <span class="text-sm font-semibold text-white/90">✓ Scrum Master</span>
+                        <span class="text-sm font-semibold text-slate-700">✓ Scrum Master</span>
                     </div>
                 </div>
             </div>
@@ -364,315 +987,378 @@
         </section>
 
         <section id="servicios" class="py-20 px-4 container mx-auto">
-            <div class="text-center mb-20">
-                <h2 class="text-4xl md:text-6xl font-black mb-6 text-white">
+            <div class="text-center mb-12 reveal">
+                <h2 class="text-4xl md:text-6xl font-black mb-6 text-slate-800">
                     <span class="text-gradient">Servicios Especializados</span>
                 </h2>
-                <p class="text-xl text-white/80 max-w-3xl mx-auto font-medium leading-relaxed">
+                <p class="text-xl text-slate-700 max-w-3xl mx-auto font-medium leading-relaxed">
                     Ofrecemos <strong>soluciones integrales</strong> en desarrollo, cloud y análisis de datos para impulsar tu negocio hacia el futuro digital.
                 </p>
             </div>
+            
+            <!-- Tab Navigation -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12 reveal">
+                <button class="tab-button active px-6 py-3 rounded-lg glass-effect text-slate-800 font-semibold border border-slate-300" data-tab="desarrollo">
+                    Desarrollo & Cloud
+                </button>
+                <button class="tab-button px-6 py-3 rounded-lg glass-effect text-slate-800 font-semibold border border-slate-300" data-tab="devops">
+                    DevOps
+                </button>
+                <button class="tab-button px-6 py-3 rounded-lg glass-effect text-slate-800 font-semibold border border-slate-300" data-tab="migracion">
+                    Migración Cloud
+                </button>
+                <button class="tab-button px-6 py-3 rounded-lg glass-effect text-slate-800 font-semibold border border-slate-300" data-tab="capacitacion">
+                    Capacitación
+                </button>
+            </div>
+            
+            <!-- Tab Content: Desarrollo & Cloud -->
+            <div id="tab-desarrollo" class="tab-container active">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="tech-card rounded-2xl p-8 group">
+                <div class="tech-card tech-card-3d rounded-2xl p-8 group reveal">
                     <div class="bg-gradient-to-r from-blue-500 to-purple-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-white">Arquitectura AWS</h3>
-                    <p class="text-white/80 leading-relaxed">Diseño e implementación de soluciones escalables en la nube de Amazon Web Services. Optimizamos su infraestructura para <strong>máximo rendimiento</strong> y <strong>eficiencia de costos</strong>.</p>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Arquitectura AWS</h3>
+                    <p class="text-slate-700 leading-relaxed">Diseño e implementación de soluciones escalables en la nube de Amazon Web Services. Optimizamos su infraestructura para <strong>máximo rendimiento</strong> y <strong>eficiencia de costos</strong>.</p>
                 </div>
-                <div class="tech-card rounded-2xl p-8 group">
+                <div class="tech-card tech-card-3d rounded-2xl p-8 group reveal">
                     <div class="bg-gradient-to-r from-green-500 to-blue-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-white">Desarrollo Java</h3>
-                    <p class="text-white/80 leading-relaxed">Desarrollo de aplicaciones empresariales robustas utilizando Java y frameworks modernos. Creamos <strong>soluciones a medida</strong> que impulsan el crecimiento de su negocio.</p>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Desarrollo Java</h3>
+                    <p class="text-slate-700 leading-relaxed">Desarrollo de aplicaciones empresariales robustas utilizando Java y frameworks modernos. Creamos <strong>soluciones a medida</strong> que impulsan el crecimiento de su negocio.</p>
                 </div>
-                <div class="tech-card rounded-2xl p-8 group">
+                <div class="tech-card tech-card-3d rounded-2xl p-8 group reveal">
                     <div class="bg-gradient-to-r from-purple-500 to-pink-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-white">Liderazgo Técnico</h3>
-                    <p class="text-white/80 leading-relaxed">Gestión de equipos y proyectos con metodologías ágiles y mejores prácticas. Potenciamos el <strong>talento de su equipo</strong> para lograr resultados excepcionales.</p>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Liderazgo Técnico</h3>
+                    <p class="text-slate-700 leading-relaxed">Gestión de equipos y proyectos con metodologías ágiles y mejores prácticas. Potenciamos el <strong>talento de su equipo</strong> para lograr resultados excepcionales.</p>
                 </div>
-                <div class="bg-white/50 border-slate-300 rounded-lg shadow-lg p-6">
-                    <svg class="h-12 w-12 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
-                    </svg>
-                    <h3 class="text-xl font-semibold mb-2">Bases de Datos</h3>
-                    <p class="text-slate-600">Optimización y gestión de bases de datos SQL y NoSQL para alto rendimiento. Diseñamos estructuras de datos eficientes que mejoran la velocidad y confiabilidad de sus aplicaciones.</p>
-                </div>
-                <div class="bg-white/50 border-slate-300 rounded-lg shadow-lg p-6">
-                    <svg class="h-12 w-12 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                    </svg>
-                    <h3 class="text-xl font-semibold mb-2">Business Intelligence</h3>
-                    <p class="text-slate-600">Implementación de soluciones de BI con Tableau para análisis de datos efectivo. Transformamos sus datos en insights accionables para tomar decisiones informadas.</p>
-                </div>
-                <div class="bg-white/50 border-slate-300 rounded-lg shadow-lg p-6">
-                    <svg class="h-12 w-12 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
-                    </svg>
-                    <h3 class="text-xl font-semibold mb-2">Desarrollo y Hosting WordPress</h3>
-                    <p class="text-slate-600">Creación y alojamiento de sitios web WordPress personalizados y optimizados. Ofrecemos soluciones web completas, desde el diseño hasta el mantenimiento continuo.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="capacitacion" class="py-16 px-4 container mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Capacitación en la Nube (AWS)</h2>
-                <p class="text-xl text-slate-600 max-w-2xl mx-auto">
-                    Potencia las habilidades de tu equipo con nuestra formación especializada en la nube.
-                </p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white/50 border-slate-200 rounded-lg shadow-lg p-6">
-                    <svg class="h-12 w-12 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M12 14l9-5-9-5-9 5 9 5z"/>
-                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/>
-                    </svg>
-                    <h3 class="text-xl font-semibold mb-2">Cursos Personalizados</h3>
-                    <p class="text-slate-600">Programas de formación adaptados a las necesidades específicas de su empresa. Diseñamos currículos que abordan sus desafíos tecnológicos únicos.</p>
-                </div>
-                <div class="bg-white/50 border-slate-200 rounded-lg shadow-lg p-6">
-                    <svg class="h-12 w-12 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
-                    </svg>
-                    <h3 class="text-xl font-semibold mb-2">Formación en Equipo</h3>
-                    <p class="text-slate-600">Capacitación para grupos, fomentando la colaboración y el aprendizaje conjunto. Fortalecemos las habilidades colectivas de su equipo para mejorar la eficiencia operativa.</p>
-                </div>
-                <div class="bg-white/50 border-slate-200 rounded-lg shadow-lg p-6">
-                    <svg class="h-12 w-12 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                    </svg>
-                    <h3 class="text-xl font-semibold mb-2">Prácticas en AWS</h3>
-                    <p class="text-slate-600">Ejercicios prácticos en entornos reales de AWS para una experiencia de aprendizaje inmersiva. Los participantes ganan confianza trabajando en escenarios del mundo real.</p>
-                </div>
-                <div class="bg-white/50 border-slate-200 rounded-lg shadow-lg p-6">
-                    <svg class="h-12 w-12 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-                    </svg>
-                    <h3 class="text-xl font-semibold mb-2">Casos de Estudio</h3>
-                    <p class="text-slate-600">Análisis de casos reales para aplicar los conocimientos en situaciones prácticas. Preparamos a su equipo para enfrentar desafíos complejos en la nube con confianza.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="devops" class="py-16 px-4 container mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">DevOps as a Service</h2>
-                <p class="text-xl text-slate-600 max-w-2xl mx-auto">
-                    Optimiza tus procesos de desarrollo y operaciones con nuestros servicios de DevOps.
-                </p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white/50 border-slate-200 rounded-lg shadow-lg p-6">
-                    <svg class="h-12 w-12 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                    </svg>
-                    <h3 class="text-xl font-semibold mb-2">Integración Continua</h3>
-                    <p class="text-slate-600">Implementación de pipelines de CI/CD para entregas rápidas y confiables. Automatizamos el proceso de desarrollo para mejorar la calidad del código y reducir el tiempo de lanzamiento.</p>
-                </div>
-                <div class="bg-white/50 border-slate-200 rounded-lg shadow-lg p-6">
-                    <svg class="h-12 w-12 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
-                    </svg>
-                    <h3 class="text-xl font-semibold mb-2">Automatización</h3>
-                    <p class="text-slate-600">Automatización de procesos para reducir errores y aumentar la eficiencia. Implementamos soluciones que liberan a su equipo de tareas repetitivas, permitiéndoles enfocarse en la innovación.</p>
-                </div>
-                <div class="bg-white/50 border-slate-200 rounded-lg shadow-lg p-6">
-                    <svg class="h-12 w-12 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                    </svg>
-                    <h3 class="text-xl font-semibold mb-2">Monitoreo y Rendimiento</h3>
-                    <p class="text-slate-600">Implementación de soluciones de monitoreo para optimizar el rendimiento. Proporcionamos visibilidad en tiempo real de sus sistemas para identificar y resolver problemas rápidamente.</p>
-                </div>
-                <div class="bg-white/50 border-slate-200 rounded-lg shadow-lg p-6">
-                    <svg class="h-12 w-12 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-                    </svg>
-                    <h3 class="text-xl font-semibold mb-2">Seguridad DevSecOps</h3>
-                    <p class="text-slate-600">Integración de prácticas de seguridad en el ciclo de vida de desarrollo. Aseguramos que la seguridad sea una prioridad desde el inicio del desarrollo hasta la implementación.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="migracion" class="py-16 px-4 container mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Migración a la Nube y Reducción de Costos</h2>
-                <p class="text-xl text-slate-600 max-w-2xl mx-auto">
-                    Optimiza tu infraestructura y reduce costos con nuestra asesoría experta en migración a la nube.
-                </p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white/50 border-slate-200 rounded-lg shadow-lg p-6">
-                    <svg class="h-12 w-12 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-                    </svg>
-                    <h3 class="text-xl font-semibold mb-2">Estrategia de Migración</h3>
-                    <p class="text-slate-600">Desarrollo de un plan personalizado para una migración a la nube sin problemas. Analizamos su infraestructura actual y diseñamos una hoja de ruta detallada para una transición exitosa.</p>
-                </div>
-                <div class="bg-white/50 border-slate-200 rounded-lg shadow-lg p-6">
-                    <svg class="h-12 w-12 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
-                    </svg>
-                    <h3 class="text-xl font-semibold mb-2">Optimización de Costos</h3>
-                    <p class="text-slate-600">Análisis y optimización de costos para maximizar el ROI de su infraestructura en la nube. Implementamos estrategias de ahorro que reducen sus gastos operativos sin comprometer el rendimiento.</p>
-                </div>
-                <div class="bg-white/50 border-slate-200 rounded-lg shadow-lg p-6">
-                    <svg class="h-12 w-12 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                    </svg>
-                    <h3 class="text-xl font-semibold mb-2">Mejora del Rendimiento</h3>
-                    <p class="text-slate-600">Optimización de aplicaciones y arquitectura para un mejor rendimiento en la nube. Rediseñamos sus sistemas para aprovechar al máximo las capacidades de la nube, mejorando la velocidad y la escalabilidad.</p>
-                </div>
-                <div class="bg-white/50 border-slate-200 rounded-lg shadow-lg p-6">
-                    <svg class="h-12 w-12 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-                    </svg>
-                    <h3 class="text-xl font-semibold mb-2">Seguridad y Cumplimiento</h3>
-                    <p class="text-slate-600">Implementación de mejores prácticas de seguridad y cumplimiento normativo en la nube. Aseguramos que su migración cumpla con los estándares de la industria y las regulaciones aplicables.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="tecnologias" class="py-16 px-4 container mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-slate-800">Tecnologías</h2>
-                <p class="text-xl text-slate-600 max-w-2xl mx-auto">
-                    Dominio de las tecnologías más demandadas en el mercado.
-                </p>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="flex flex-col items-center">
-                    <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center">
-                        <svg class="w-20 h-20 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
-                        </svg>
-                    </div>
-                    <span class="mt-4 text-slate-700 font-medium">AWS</span>
-                </div>
-                <div class="flex flex-col items-center">
-                    <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center">
-                        <svg class="w-20 h-20 text-blue-500" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M2,21H22V19H2M20,8H18V5H20M20,3H4V13A4,4 0 0,0 8,17H14A4,4 0 0,0 18,13V10H20A2,2 0 0,0 22,8V5C22,3.89 21.1,3 20,3Z" />
-                        </svg>
-                    </div>
-                    <span class="mt-4 text-slate-700 font-medium">Java</span>
-                </div>
-                <div class="flex flex-col items-center">
-                    <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center">
-                        <svg class="w-20 h-20 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div class="tech-card tech-card-3d rounded-2xl p-8 group reveal">
+                    <div class="bg-gradient-to-r from-indigo-500 to-purple-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
                         </svg>
                     </div>
-                    <span class="mt-4 text-slate-700 font-medium">MySQL/Oracle/SQL Server</span>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Bases de Datos</h3>
+                    <p class="text-slate-700 leading-relaxed">Optimización y gestión de bases de datos SQL y NoSQL para alto rendimiento. Diseñamos estructuras de datos eficientes que mejoran la velocidad y confiabilidad de sus aplicaciones.</p>
                 </div>
-                <div class="flex flex-col items-center">
-                    <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center">
-                        <svg class="w-20 h-20 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div class="tech-card tech-card-3d rounded-2xl p-8 group reveal">
+                    <div class="bg-gradient-to-r from-teal-500 to-cyan-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
                         </svg>
                     </div>
-                    <span class="mt-4 text-slate-700 font-medium">Tableau</span>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Business Intelligence</h3>
+                    <p class="text-slate-700 leading-relaxed">Implementación de soluciones de BI con Tableau para análisis de datos efectivo. Transformamos sus datos en insights accionables para tomar decisiones informadas.</p>
                 </div>
-                <div class="flex flex-col items-center">
-                    <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center">
-                        <svg class="w-20 h-20 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div class="tech-card tech-card-3d rounded-2xl p-8 group reveal">
+                    <div class="bg-gradient-to-r from-pink-500 to-rose-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Desarrollo y Hosting WordPress</h3>
+                    <p class="text-slate-700 leading-relaxed">Creación y alojamiento de sitios web WordPress personalizados y optimizados. Ofrecemos soluciones web completas, desde el diseño hasta el mantenimiento continuo.</p>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Tab Content: DevOps -->
+            <div id="tab-devops" class="tab-container">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="tech-card tech-card-3d rounded-2xl p-8 group reveal">
+                    <div class="bg-gradient-to-r from-blue-500 to-indigo-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                         </svg>
                     </div>
-                    <span class="mt-4 text-slate-700 font-medium">Git</span>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Integración Continua</h3>
+                    <p class="text-slate-700 leading-relaxed">Implementación de pipelines de CI/CD para entregas rápidas y confiables. Automatizamos el proceso de desarrollo para mejorar la calidad del código y reducir el tiempo de lanzamiento.</p>
                 </div>
-                <div class="flex flex-col items-center">
-                    <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center">
-                        <svg class="w-20 h-20 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                <div class="tech-card tech-card-3d rounded-2xl p-8 group reveal">
+                    <div class="bg-gradient-to-r from-green-500 to-emerald-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
                         </svg>
                     </div>
-                    <span class="mt-4 text-slate-700 font-medium">Linux</span>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Automatización</h3>
+                    <p class="text-slate-700 leading-relaxed">Automatización de procesos para reducir errores y aumentar la eficiencia. Implementamos soluciones que liberan a su equipo de tareas repetitivas, permitiéndoles enfocarse en la innovación.</p>
                 </div>
-                <div class="flex flex-col items-center">
-                    <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center">
-                        <svg class="w-20 h-20 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/>
+                <div class="tech-card tech-card-3d rounded-2xl p-8 group reveal">
+                    <div class="bg-gradient-to-r from-purple-500 to-violet-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
                         </svg>
                     </div>
-                    <span class="mt-4 text-slate-700 font-medium">Docker</span>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Monitoreo y Rendimiento</h3>
+                    <p class="text-slate-700 leading-relaxed">Implementación de soluciones de monitoreo para optimizar el rendimiento. Proporcionamos visibilidad en tiempo real de sus sistemas para identificar y resolver problemas rápidamente.</p>
                 </div>
-                <div class="flex flex-col items-center">
-                    <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center">
-                        <svg class="w-20 h-20 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div class="tech-card tech-card-3d rounded-2xl p-8 group reveal">
+                    <div class="bg-gradient-to-r from-red-500 to-pink-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Seguridad DevSecOps</h3>
+                    <p class="text-slate-700 leading-relaxed">Integración de prácticas de seguridad en el ciclo de vida de desarrollo. Aseguramos que la seguridad sea una prioridad desde el inicio del desarrollo hasta la implementación.</p>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Tab Content: Migración Cloud -->
+            <div id="tab-migracion" class="tab-container">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="tech-card tech-card-3d rounded-2xl p-8 group reveal">
+                    <div class="bg-gradient-to-r from-orange-500 to-amber-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Estrategia de Migración</h3>
+                    <p class="text-slate-700 leading-relaxed">Desarrollo de un plan personalizado para una migración a la nube sin problemas. Analizamos su infraestructura actual y diseñamos una hoja de ruta detallada para una transición exitosa.</p>
+                </div>
+                <div class="tech-card tech-card-3d rounded-2xl p-8 group reveal">
+                    <div class="bg-gradient-to-r from-emerald-500 to-teal-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Optimización de Costos</h3>
+                    <p class="text-slate-700 leading-relaxed">Análisis y optimización de costos para maximizar el ROI de su infraestructura en la nube. Implementamos estrategias de ahorro que reducen sus gastos operativos sin comprometer el rendimiento.</p>
+                </div>
+                <div class="tech-card tech-card-3d rounded-2xl p-8 group reveal">
+                    <div class="bg-gradient-to-r from-cyan-500 to-blue-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                         </svg>
                     </div>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Mejora del Rendimiento</h3>
+                    <p class="text-slate-700 leading-relaxed">Optimización de aplicaciones y arquitectura para un mejor rendimiento en la nube. Rediseñamos sus sistemas para aprovechar al máximo las capacidades de la nube, mejorando la velocidad y la escalabilidad.</p>
+                </div>
+                <div class="tech-card tech-card-3d rounded-2xl p-8 group reveal">
+                    <div class="bg-gradient-to-r from-sky-500 to-blue-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Seguridad y Cumplimiento</h3>
+                    <p class="text-slate-700 leading-relaxed">Implementación de mejores prácticas de seguridad y cumplimiento normativo en la nube. Aseguramos que su migración cumpla con los estándares de la industria y las regulaciones aplicables.</p>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Tab Content: Capacitación -->
+            <div id="tab-capacitacion" class="tab-container">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="tech-card tech-card-3d rounded-2xl p-8 group reveal">
+                    <div class="bg-gradient-to-r from-blue-500 to-purple-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 14l9-5-9-5-9 5 9 5z"/>
+                            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Cursos Personalizados</h3>
+                    <p class="text-slate-700 leading-relaxed">Programas de formación adaptados a las necesidades específicas de su empresa. Diseñamos currículos que abordan sus desafíos tecnológicos únicos.</p>
+                </div>
+                <div class="tech-card tech-card-3d rounded-2xl p-8 group reveal">
+                    <div class="bg-gradient-to-r from-green-500 to-blue-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Formación en Equipo</h3>
+                    <p class="text-slate-700 leading-relaxed">Capacitación para grupos, fomentando la colaboración y el aprendizaje conjunto. Fortalecemos las habilidades colectivas de su equipo para mejorar la eficiencia operativa.</p>
+                </div>
+                <div class="tech-card tech-card-3d rounded-2xl p-8 group reveal">
+                    <div class="bg-gradient-to-r from-purple-500 to-pink-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Prácticas en AWS</h3>
+                    <p class="text-slate-700 leading-relaxed">Ejercicios prácticos en entornos reales de AWS para una experiencia de aprendizaje inmersiva. Los participantes ganan confianza trabajando en escenarios del mundo real.</p>
+                </div>
+                <div class="tech-card tech-card-3d rounded-2xl p-8 group reveal">
+                    <div class="bg-gradient-to-r from-yellow-500 to-orange-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Casos de Estudio</h3>
+                    <p class="text-slate-700 leading-relaxed">Análisis de casos reales para aplicar los conocimientos en situaciones prácticas. Preparamos a su equipo para enfrentar desafíos complejos en la nube con confianza.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        <!-- Visual Divider -->
+        <div class="section-divider reveal" style="height: 100px;"></div>
+
+        <section id="tecnologias" class="py-20 px-4 container mx-auto">
+            <div class="text-center mb-12 reveal">
+                <h2 class="text-4xl md:text-6xl font-black mb-6 text-slate-800">
+                    <span class="text-gradient">Tecnologías</span>
+                </h2>
+                <p class="text-xl text-slate-700 max-w-3xl mx-auto font-medium leading-relaxed">
+                    Dominio de las <strong>tecnologías más demandadas</strong> en el mercado para desarrollar soluciones de alto impacto.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
+                <!-- AWS -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center tech-card tech-card-3d">
+                        <img src="https://d1.awsstatic.com/logos/aws-logo-lockup-powered-by-Amazon_light-bluetext.svg" alt="AWS Logo" class="w-20 h-20 object-contain" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg'">
+                    </div>
+                    <span class="mt-4 text-slate-700 font-medium">AWS</span>
+                </div>
+                <!-- Java -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center tech-card tech-card-3d">
+                        <img src="https://www.oracle.com/a/ocom/img/obic/java-card.png" alt="Java Logo" class="w-20 h-20 object-contain" onerror="this.src='https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg'">
+                    </div>
+                    <span class="mt-4 text-slate-700 font-medium">Java</span>
+                </div>
+                <!-- Databases -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center relative tech-card tech-card-3d">
+                        <div class="flex items-center justify-center gap-1 flex-wrap">
+                            <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL Logo" class="h-10 object-contain" onerror="this.style.display='none'">
+                            <img src="https://www.oracle.com/a/ocom/img/obic/oracle-logo.png" alt="Oracle Logo" class="h-10 object-contain" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg'">
+                        </div>
+                    </div>
+                    <span class="mt-4 text-slate-700 font-medium text-center">MySQL/Oracle/SQL Server</span>
+                </div>
+                <!-- Tableau -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center tech-card tech-card-3d">
+                        <img src="https://www.tableau.com/themes/custom/tableau_www/logo.png" alt="Tableau Logo" class="w-20 h-20 object-contain" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Software_logo.png'">
+                    </div>
+                    <span class="mt-4 text-slate-700 font-medium">Tableau</span>
+                </div>
+                <!-- Git -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center tech-card tech-card-3d">
+                        <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git Logo" class="w-20 h-20 object-contain" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg'">
+                    </div>
+                    <span class="mt-4 text-slate-700 font-medium">Git</span>
+                </div>
+                <!-- Linux -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center tech-card tech-card-3d">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" alt="Linux Logo" class="w-20 h-20 object-contain">
+                    </div>
+                    <span class="mt-4 text-slate-700 font-medium">Linux</span>
+                </div>
+                <!-- Docker -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center tech-card tech-card-3d">
+                        <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.svg" alt="Docker Logo" class="w-20 h-20 object-contain" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg'">
+                    </div>
+                    <span class="mt-4 text-slate-700 font-medium">Docker</span>
+                </div>
+                <!-- Spring -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center tech-card tech-card-3d">
+                        <img src="https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg" alt="Spring Logo" class="w-20 h-20 object-contain" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg'">
+                    </div>
                     <span class="mt-4 text-slate-700 font-medium">Spring/Spring Boot</span>
+                </div>
+                <!-- Oracle Cloud Infrastructure -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center tech-card tech-card-3d">
+                        <img src="https://www.oracle.com/a/ocom/img/obic/oracle-cloud-logo.png" alt="OCI Logo" class="w-20 h-20 object-contain" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg'">
+                    </div>
+                    <span class="mt-4 text-slate-700 font-medium text-center">Oracle Cloud Infrastructure (OCI)</span>
+                </div>
+                <!-- WordPress -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center tech-card tech-card-3d">
+                        <img src="https://s.w.org/style/images/wp-header-logo.png" alt="WordPress Logo" class="w-20 h-20 object-contain" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/0/09/Wordpress_logo.svg'">
+                    </div>
+                    <span class="mt-4 text-slate-700 font-medium">WordPress</span>
+                </div>
+                <!-- RabbitMQ -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center tech-card tech-card-3d">
+                        <img src="https://www.rabbitmq.com/img/logo-rabbitmq.svg" alt="RabbitMQ Logo" class="w-20 h-20 object-contain" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rabbitmq/rabbitmq-original.svg'">
+                    </div>
+                    <span class="mt-4 text-slate-700 font-medium">RabbitMQ</span>
+                </div>
+                <!-- CloudFormation -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center tech-card tech-card-3d">
+                        <img src="https://cdn.worldvectorlogo.com/logos/aws-cloudformation.svg" alt="AWS CloudFormation Logo" class="w-20 h-20 object-contain" onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg'">
+                    </div>
+                    <span class="mt-4 text-slate-700 font-medium text-center">AWS CloudFormation</span>
                 </div>
             </div>
         </section>
 
         <section id="certificaciones" class="py-20 px-4 container mx-auto">
-            <div class="text-center mb-20">
-                <h2 class="text-4xl md:text-6xl font-black mb-6 text-white">
+            <div class="text-center mb-12 reveal">
+                <h2 class="text-4xl md:text-6xl font-black mb-6 text-slate-800">
                     <span class="text-gradient">Certificaciones Profesionales</span>
                 </h2>
-                <p class="text-xl text-white/80 max-w-3xl mx-auto font-medium leading-relaxed">
+                <p class="text-xl text-slate-700 max-w-3xl mx-auto font-medium leading-relaxed">
                     Nuestro equipo cuenta con <strong>certificaciones reconocidas globalmente</strong> que avalan nuestra experiencia y compromiso con la excelencia técnica.
                 </p>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <div class="flex flex-col items-center">
-                    <div class="bg-white p-4 rounded-lg shadow-md w-32 h-32 relative">
+                    <div class="bg-white p-4 rounded-lg shadow-md w-32 h-32 relative tech-card tech-card-3d">
                         <img src="https://images.credly.com/size/680x680/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" alt="AWS Certified Solutions Architect - Associate" class="absolute inset-0 w-full h-full object-contain">
                     </div>
                     <span class="mt-4 text-slate-700 font-medium text-center">AWS Solutions Architect</span>
                 </div>
                 <div class="flex flex-col items-center">
-                    <div class="bg-white p-4 rounded-lg shadow-md w-32 h-32 relative">
+                    <div class="bg-white p-4 rounded-lg shadow-md w-32 h-32 relative tech-card tech-card-3d">
                         <img src="https://images.credly.com/size/680x680/images/9246c572-2b5e-4b3a-9fae-e87b3c1bf681/blob" alt="AWS Serverless Developer" class="absolute inset-0 w-full h-full object-contain">
                     </div>
                     <span class="mt-4 text-slate-700 font-medium text-center">AWS Serverless Developer</span>
                 </div>
                 <div class="flex flex-col items-center">
-                    <div class="bg-white p-4 rounded-lg shadow-md w-32 h-32 relative">
+                    <div class="bg-white p-4 rounded-lg shadow-md w-32 h-32 relative tech-card tech-card-3d">
                         <img src="https://images.credly.com/size/680x680/images/3e1a7290-fade-4be4-9bcd-1a7743294a81/Oracle_Professional_Badge__1_.png" alt="Java Certified Professional" class="absolute inset-0 w-full h-full object-contain">
                     </div>
                     <span class="mt-4 text-slate-700 font-medium text-center">Java Certified Professional</span>
                 </div>
                 <div class="flex flex-col items-center">
-                    <div class="bg-white p-4 rounded-lg shadow-md w-32 h-32 relative">
+                    <div class="bg-white p-4 rounded-lg shadow-md w-32 h-32 relative tech-card tech-card-3d">
                         <img src="https://images.credly.com/size/680x680/images/a2790314-008a-4c3d-9553-f5e84eb359ba/image.png" alt="Certified Scrum Master" class="absolute inset-0 w-full h-full object-contain">
                     </div>
                     <span class="mt-4 text-slate-700 font-medium text-center">Certified Scrum Master</span>
                 </div>
                 <div class="flex flex-col items-center">
-                    <div class="bg-white p-4 rounded-lg shadow-md w-32 h-32 relative">
+                    <div class="bg-white p-4 rounded-lg shadow-md w-32 h-32 relative tech-card tech-card-3d">
                         <img src="https://images.credly.com/size/680x680/images/b0c5445a-72a2-46ce-a599-96147e210efb/blob" alt="Docker" class="absolute inset-0 w-full h-full object-contain">
                     </div>
                     <span class="mt-4 text-slate-700 font-medium text-center">Docker</span>
                 </div>
                 <div class="flex flex-col items-center">
-                    <div class="bg-white p-4 rounded-lg shadow-md w-32 h-32 relative">
+                    <div class="bg-white p-4 rounded-lg shadow-md w-32 h-32 relative tech-card tech-card-3d">
                         <img src="https://images.credly.com/size/680x680/images/712a773b-9acc-4bc8-90fa-6afdfc95da1e/image.png" alt="Cybersecurity Awareness" class="absolute inset-0 w-full h-full object-contain">
                     </div>
                     <span class="mt-4 text-slate-700 font-medium text-center">Cybersecurity Awareness</span>
                 </div>
                 <div class="flex flex-col items-center">
-                    <div class="bg-white p-4 rounded-lg shadow-md w-32 h-32 relative">
+                    <div class="bg-white p-4 rounded-lg shadow-md w-32 h-32 relative tech-card tech-card-3d">
                         <img src="https://images.credly.com/size/680x680/images/c012a920-d390-4b6c-b956-a8728ef8c7ee/image.png" alt="Django" class="absolute inset-0 w-full h-full object-contain">
                     </div>
                     <span class="mt-4 text-slate-700 font-medium text-center">Django</span>
                 </div>
                 <div class="flex flex-col items-center">
-                    <div class="bg-white p-4 rounded-lg shadow-md w-32 h-32 relative">
+                    <div class="bg-white p-4 rounded-lg shadow-md w-32 h-32 relative tech-card tech-card-3d">
                         <img src="https://images.credly.com/size/680x680/images/b790eb12-ecb3-4b94-89be-61aa40c92e7c/image.png" alt="Python" class="absolute inset-0 w-full h-full object-contain">
                     </div>
                     <span class="mt-4 text-slate-700 font-medium text-center">Python</span>
@@ -680,76 +1366,46 @@
             </div>
         </section>
 
-        <section id="experiencia" class="py-16 px-4 container mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Experiencia Profesional</h2>
-                <p class="text-xl text-slate-700 max-w-2xl mx-auto font-medium">
-                    Años de experiencia en el desarrollo de soluciones tecnológicas de alto impacto.
-                </p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-slate-800/50 border-slate-700 rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-semibold mb-2 flex justify-between items-center">
-                        Arquitecto Cloud AWS
-                        <span class="text-blue-500 text-sm font-normal">5+ años</span>
-                    </h3>
-                    <p class="text-slate-300">Certificado en diseño e implementación de soluciones cloud escalables y seguras.</p>
-                </div>
-                <div class="bg-slate-800/50 border-slate-700 rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-semibold mb-2 flex justify-between items-center">
-                        Desarrollador Java Senior
-                        <span class="text-blue-500 text-sm font-normal">8+ años</span>
-                    </h3>
-                    <p class="text-slate-300">Experto en desarrollo de aplicaciones empresariales y microservicios.</p>
-                </div>
-                <div class="bg-slate-800/50 border-slate-700 rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-semibold mb-2 flex justify-between items-center">
-                        Líder Técnico
-                        <span class="text-blue-500 text-sm font-normal">10+ años</span>
-                    </h3>
-                    <p class="text-slate-300">Gestión exitosa de equipos y proyectos de desarrollo ágil.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="clientes" class="py-16 px-4 container mx-auto overflow-hidden">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestros Clientes</h2>
-                <p class="text-xl text-slate-600 max-w-2xl mx-auto">
-                    Empresas que han confiado en nuestros servicios de consultoría.
+        <section id="clientes" class="py-20 px-4 container mx-auto overflow-hidden">
+            <div class="text-center mb-12 reveal">
+                <h2 class="text-4xl md:text-6xl font-black mb-6 text-slate-800">
+                    <span class="text-gradient">Nuestros Clientes</span>
+                </h2>
+                <p class="text-xl text-slate-700 max-w-3xl mx-auto font-medium leading-relaxed">
+                    Empresas que han <strong>confiado en nuestros servicios</strong> de consultoría y desarrollo.
                 </p>
             </div>
             <div class="flex sliding-logos" style="width: 200%;">
                 <div class="flex w-1/2">
                     <div class="w-1/3 px-4 flex items-center justify-center">
-                        <a href="https://www.escobar.gob.ar/" target="_blank" rel="noopener noreferrer" class="block w-48 h-24 relative">
+                        <a href="https://www.escobar.gob.ar/" target="_blank" rel="noopener noreferrer" class="block w-64 h-32 relative">
                             <img src="https://www.escobar.gob.ar/wp-content/uploads/2020/03/cropped-LogoEscobar2020ISO.png" alt="Municipalidad de Escobar" class="absolute inset-0 w-full h-full object-contain">
                         </a>
                     </div>
                     <div class="w-1/3 px-4 flex items-center justify-center">
-                        <a href="https://www.colegioubaescobar.gob.ar/" target="_blank" rel="noopener noreferrer" class="block w-48 h-24 relative">
+                        <a href="https://www.colegioubaescobar.gob.ar/" target="_blank" rel="noopener noreferrer" class="block w-64 h-32 relative">
                             <img src="https://www.colegioubaescobar.gob.ar/wp-content/uploads/2020/10/1588707305681.png" alt="Colegio UBA Escobar" class="absolute inset-0 w-full h-full object-contain">
                         </a>
                     </div>
                     <div class="w-1/3 px-4 flex items-center justify-center">
-                        <a href="https://www.teatroseminari.gob.ar/" target="_blank" rel="noopener noreferrer" class="block w-48 h-24 relative">
+                        <a href="https://www.teatroseminari.gob.ar/" target="_blank" rel="noopener noreferrer" class="block w-64 h-32 relative">
                             <img src="https://www.teatroseminari.gob.ar/wp-content/uploads/2020/09/cropped-TeatroSeminariLogo.png" alt="Teatro Seminari" class="absolute inset-0 w-full h-full object-contain">
                         </a>
                     </div>
                 </div>
                 <div class="flex w-1/2">
                     <div class="w-1/3 px-4 flex items-center justify-center">
-                        <a href="https://www.pesescobar.com.ar/" target="_blank" rel="noopener noreferrer" class="block w-48 h-24 relative">
+                        <a href="https://www.pesescobar.com.ar/" target="_blank" rel="noopener noreferrer" class="block w-64 h-32 relative">
                             <img src="https://www.pesescobar.com.ar/wp-content/uploads/2017/12/header3.jpg" alt="Polo Educacion Superior Escobar" class="absolute inset-0 w-full h-full object-contain">
                         </a>
                     </div>
                     <div class="w-1/3 px-4 flex items-center justify-center">
-                        <a href="https://dijitalbloks.co.uk" target="_blank" rel="noopener noreferrer" class="block w-48 h-24 relative">
+                        <a href="https://dijitalbloks.co.uk" target="_blank" rel="noopener noreferrer" class="block w-64 h-32 relative">
                             <img src="https://dijitalbloks.co.uk/wp-content/uploads/2024/12/Logo.png" alt="Dijital Bloks" class="absolute inset-0 w-full h-full object-contain">
                         </a>
                     </div>
                     <div class="w-1/3 px-4 flex items-center justify-center">
-                        <a href="https://perpetualtech.ai/" target="_blank" rel="noopener noreferrer" class="block w-48 h-24 relative">
+                        <a href="https://perpetualtech.ai/" target="_blank" rel="noopener noreferrer" class="block w-64 h-32 relative">
                             <img src="https://perpetualtech.ai/unnamed.jpg" alt="Perpetual Technologies" class="absolute inset-0 w-full h-full object-contain">
                         </a>
                     </div>
@@ -759,61 +1415,61 @@
 
         <section id="contacto" class="py-20 px-4 container mx-auto">
             <div class="max-w-6xl mx-auto">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-6xl font-black mb-6 text-white">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-4xl md:text-6xl font-black mb-6 text-slate-800">
                         <span class="text-gradient">Contacta Conmigo</span>
                     </h2>
-                    <p class="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
+                    <p class="text-xl text-slate-700 max-w-3xl mx-auto font-medium leading-relaxed">
                         ¿Listo para llevar tu proyecto al siguiente nivel? <strong>Cuéntame sobre tus necesidades</strong> y te ayudaremos a transformar tu visión en realidad.
                     </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <form class="space-y-6 glass-effect p-8 rounded-2xl shadow-2xl relative z-10" action="https://getform.io/f/bejjmqxa" method="POST">
-                        <h3 class="text-2xl font-bold text-white mb-6">Solicita tu Consultoría Gratuita</h3>
+                    <form class="space-y-6 tech-card tech-card-3d p-8 rounded-2xl shadow-2xl relative z-10" action="https://getform.io/f/bejjmqxa" method="POST">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-6">Solicita tu Consultoría Gratuita</h3>
                         <div class="space-y-4">
                             <div>
-                                <label for="name" class="block text-sm font-semibold text-white/90 mb-2">Nombre Completo</label>
-                                <input type="text" id="user_name" name="user_name" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent backdrop-blur-sm" placeholder="Tu nombre completo" required>
+                                <label for="name" class="block text-sm font-semibold text-slate-700 mb-2">Nombre Completo</label>
+                                <input type="text" id="user_name" name="user_name" class="form-input w-full px-4 py-3 bg-white/80 border border-slate-300 rounded-xl text-slate-800 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent backdrop-blur-sm" placeholder="Tu nombre completo" required>
                             </div>
                             <div>
-                                <label for="email" class="block text-sm font-semibold text-white/90 mb-2">Email Corporativo</label>
-                                <input type="email" id="user_email" name="user_email" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent backdrop-blur-sm" placeholder="tu@empresa.com" required>
+                                <label for="email" class="block text-sm font-semibold text-slate-700 mb-2">Email Corporativo</label>
+                                <input type="email" id="user_email" name="user_email" class="form-input w-full px-4 py-3 bg-white/80 border border-slate-300 rounded-xl text-slate-800 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent backdrop-blur-sm" placeholder="tu@empresa.com" required>
                             </div>
                             <div>
-                                <label for="company" class="block text-sm font-semibold text-white/90 mb-2">Empresa</label>
-                                <input type="text" id="company" name="company" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent backdrop-blur-sm" placeholder="Nombre de tu empresa">
+                                <label for="company" class="block text-sm font-semibold text-slate-700 mb-2">Empresa</label>
+                                <input type="text" id="company" name="company" class="form-input w-full px-4 py-3 bg-white/80 border border-slate-300 rounded-xl text-slate-800 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent backdrop-blur-sm" placeholder="Nombre de tu empresa">
                             </div>
                             <div>
-                                <label for="message" class="block text-sm font-semibold text-white/90 mb-2">Describe tu Proyecto</label>
-                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent backdrop-blur-sm resize-none" placeholder="Cuéntame sobre tu proyecto, objetivos y desafíos técnicos..." required></textarea>
+                                <label for="message" class="block text-sm font-semibold text-slate-700 mb-2">Describe tu Proyecto</label>
+                                <textarea id="message" name="message" rows="5" class="form-input w-full px-4 py-3 bg-white/80 border border-slate-300 rounded-xl text-slate-800 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent backdrop-blur-sm resize-none" placeholder="Cuéntame sobre tu proyecto, objetivos y desafíos técnicos..." required></textarea>
                             </div>
                         </div>
                         <button type="submit" class="w-full btn-primary text-white py-4 px-6 rounded-xl text-lg font-bold shadow-lg hover:shadow-xl transition-all">
                             Enviar Consultoría Gratuita
                         </button>
-                        <p class="text-white/70 text-sm text-center">
+                        <p class="text-slate-600 text-sm text-center">
                             ✓ Respuesta en menos de 24 horas<br>
                             ✓ Consultoría inicial sin compromiso
                         </p>
                     </form>
                     <div class="space-y-8">
-                        <h3 class="text-2xl font-bold mb-4">Referencias Profesionales</h3>
-                        <a href="https://www.upwork.com/freelancers/leonardol25" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-4">
+                        <h3 class="text-2xl font-bold mb-4 text-slate-800">Referencias Profesionales</h3>
+                        <a href="https://www.upwork.com/freelancers/leonardol25" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-4 text-slate-700 hover:text-slate-900 transition-colors">
                             <div class="w-24 h-12 relative">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Upwork-logo.svg/240px-Upwork-logo.svg.png" alt="Upwork" class="absolute inset-0 w-full h-full object-contain">
                             </div>
                             <span>Mi perfil en Upwork</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/leonardolarraquy/" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-4">
+                        <a href="https://www.linkedin.com/in/leonardolarraquy/" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-4 text-slate-700 hover:text-slate-900 transition-colors">
                             <div class="w-24 h-12 relative">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" class="absolute inset-0 w-full h-full object-contain">
                             </div>
                             <span>Mi perfil en LinkedIn</span>
                         </a>
                         <div class="mt-4">
-                            <h4 class="font-semibold mb-2">Datos de contacto:</h4>
-                            <p>Email: info@cloudexperts.com.ar</p>
-                            <p>Móvil: +54 9 11 6709 8413</p>
+                            <h4 class="font-semibold mb-2 text-slate-800">Datos de contacto:</h4>
+                            <p class="text-slate-700">Email: info@cloudexperts.com.ar</p>
+                            <p class="text-slate-700">Móvil: +54 9 11 6709 8413</p>
                         </div>
                     </div>
                 </div>
@@ -833,6 +1489,258 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
         </svg>
     </a>
+
+    <!-- Google tag (gtag.js) event -->
+    <script>
+        // Interceptar el envío del formulario de contacto
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('form[action*="getform.io"]');
+            if (form) {
+                form.addEventListener('submit', function(event) {
+                    // Disparar evento de Google Analytics
+                    if (typeof gtag === 'function') {
+                        console.log('✅ Formulario enviado - Disparando evento Google Analytics');
+                        gtag('event', 'conversion_event_contact_2', {
+                            // <event_parameters>
+                        });
+                        console.log('✅ Evento conversion_event_contact_2 enviado a Google Analytics');
+                    } else {
+                        console.error('❌ Error: gtag no está disponible');
+                    }
+                    // Permitir que el formulario se envíe normalmente (no prevenir el comportamiento por defecto)
+                });
+            } else {
+                console.warn('⚠️ Formulario no encontrado');
+            }
+        });
+    </script>
+
+    <!-- Dynamic Enhancements Script -->
+    <script>
+        (function() {
+            'use strict';
+            
+            // Scroll Reveal Animation
+            function initScrollReveal() {
+                const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+                const windowHeight = window.innerHeight;
+                const revealPoint = 150;
+                
+                function checkReveal() {
+                    reveals.forEach(element => {
+                        const elementTop = element.getBoundingClientRect().top;
+                        if (elementTop < windowHeight - revealPoint) {
+                            element.classList.add('active');
+                        }
+                    });
+                }
+                
+                window.addEventListener('scroll', checkReveal);
+                checkReveal(); // Check on load
+            }
+            
+            // Animated Counters
+            function initCounters() {
+                const counters = document.querySelectorAll('.counter');
+                const speed = 200;
+                
+                counters.forEach(counter => {
+                    const target = parseInt(counter.getAttribute('data-target')) || parseInt(counter.textContent.replace(/\D/g, ''));
+                    const increment = target / speed;
+                    let current = 0;
+                    
+                    const updateCounter = () => {
+                        if (current < target) {
+                            current += increment;
+                            counter.textContent = Math.ceil(current) + (counter.textContent.includes('+') ? '+' : '');
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            counter.textContent = target + (counter.textContent.includes('+') ? '+' : '');
+                        }
+                    };
+                    
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting && !counter.classList.contains('counted')) {
+                                counter.classList.add('counted');
+                                updateCounter();
+                            }
+                        });
+                    }, { threshold: 0.5 });
+                    
+                    observer.observe(counter);
+                });
+            }
+            
+            // Particles Background
+            function initParticles() {
+                const canvas = document.createElement('canvas');
+                canvas.id = 'particles-canvas';
+                document.body.appendChild(canvas);
+                
+                const ctx = canvas.getContext('2d');
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+                
+                const particles = [];
+                const particleCount = 60;
+                
+                class Particle {
+                    constructor() {
+                        this.x = Math.random() * canvas.width;
+                        this.y = Math.random() * canvas.height;
+                        this.size = Math.random() * 3 + 1;
+                        this.speedX = Math.random() * 0.5 - 0.25;
+                        this.speedY = Math.random() * 0.5 - 0.25;
+                        this.opacity = Math.random() * 0.5 + 0.2;
+                    }
+                    
+                    update() {
+                        this.x += this.speedX;
+                        this.y += this.speedY;
+                        
+                        if (this.x > canvas.width) this.x = 0;
+                        if (this.x < 0) this.x = canvas.width;
+                        if (this.y > canvas.height) this.y = 0;
+                        if (this.y < 0) this.y = canvas.height;
+                    }
+                    
+                    draw() {
+                        ctx.fillStyle = `rgba(59, 130, 246, ${this.opacity})`;
+                        ctx.beginPath();
+                        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                        ctx.fill();
+                    }
+                }
+                
+                for (let i = 0; i < particleCount; i++) {
+                    particles.push(new Particle());
+                }
+                
+                function animate() {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    particles.forEach(particle => {
+                        particle.update();
+                        particle.draw();
+                    });
+                    requestAnimationFrame(animate);
+                }
+                
+                window.addEventListener('resize', () => {
+                    canvas.width = window.innerWidth;
+                    canvas.height = window.innerHeight;
+                });
+                
+                animate();
+            }
+            
+            // Active Navigation Indicator
+            function initActiveNav() {
+                const sections = document.querySelectorAll('section[id]');
+                const navLinks = document.querySelectorAll('.nav-link');
+                
+                function updateActiveNav() {
+                    const scrollY = window.pageYOffset;
+                    
+                    sections.forEach(section => {
+                        const sectionTop = section.offsetTop - 100;
+                        const sectionHeight = section.offsetHeight;
+                        const sectionId = section.getAttribute('id');
+                        
+                        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                            navLinks.forEach(link => {
+                                link.classList.remove('active');
+                                if (link.getAttribute('href') === `#${sectionId}`) {
+                                    link.classList.add('active');
+                                }
+                            });
+                        }
+                    });
+                }
+                
+                window.addEventListener('scroll', updateActiveNav);
+                updateActiveNav();
+            }
+            
+            // Enhanced Form Validation
+            function initFormValidation() {
+                const inputs = document.querySelectorAll('.form-input');
+                
+                inputs.forEach(input => {
+                    input.addEventListener('blur', function() {
+                        if (this.value && !this.validity.valid) {
+                            this.style.borderColor = '#ef4444';
+                        } else if (this.value && this.validity.valid) {
+                            this.style.borderColor = '#10b981';
+                        }
+                    });
+                    
+                    input.addEventListener('input', function() {
+                        if (this.value && this.validity.valid) {
+                            this.style.borderColor = '#10b981';
+                        }
+                    });
+                });
+            }
+            
+            // Smooth Scroll Enhancement
+            function initSmoothScroll() {
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        const href = this.getAttribute('href');
+                        if (href !== '#' && href.length > 1) {
+                            e.preventDefault();
+                            const target = document.querySelector(href);
+                            if (target) {
+                                const headerOffset = 80;
+                                const elementPosition = target.getBoundingClientRect().top;
+                                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                                
+                                window.scrollTo({
+                                    top: offsetPosition,
+                                    behavior: 'smooth'
+                                });
+                            }
+                        }
+                    });
+                });
+            }
+            
+            // Tab Navigation
+            function initTabs() {
+                const tabButtons = document.querySelectorAll('.tab-button');
+                const tabContainers = document.querySelectorAll('.tab-container');
+                
+                tabButtons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        const targetTab = this.getAttribute('data-tab');
+                        
+                        // Remove active class from all buttons and containers
+                        tabButtons.forEach(btn => btn.classList.remove('active'));
+                        tabContainers.forEach(container => container.classList.remove('active'));
+                        
+                        // Add active class to clicked button and corresponding container
+                        this.classList.add('active');
+                        const targetContainer = document.getElementById(`tab-${targetTab}`);
+                        if (targetContainer) {
+                            targetContainer.classList.add('active');
+                        }
+                    });
+                });
+            }
+            
+            // Initialize all features
+            document.addEventListener('DOMContentLoaded', function() {
+                initScrollReveal();
+                initCounters();
+                initParticles();
+                initActiveNav();
+                initFormValidation();
+                initSmoothScroll();
+                initTabs();
+            });
+        })();
+    </script>
 </body>
 </html>
 
