@@ -498,356 +498,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
-    <style>
-        * {
-            font-family: 'Inter', sans-serif;
-        }
-        
-        @keyframes slide {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-        
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-        
-        @keyframes pulse-glow {
-            0%, 100% {
-                box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
-            }
-            50% {
-                box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
-            }
-        }
-        
-        @keyframes gradient-shift {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-        
-        .sliding-logos {
-            animation: slide 30s linear infinite;
-        }
-        
-        .floating {
-            animation: float 6s ease-in-out infinite;
-        }
-        
-        .pulse-glow {
-            animation: pulse-glow 2s ease-in-out infinite;
-        }
-        
-        .gradient-bg {
-            background: linear-gradient(-45deg, #f8fafc, #e2e8f0, #cbd5e1, #94a3b8, #f8fafc, #e2e8f0);
-            background-size: 400% 400%;
-            animation: gradient-shift 15s ease infinite;
-        }
-        
-        .glass-effect {
-            background: linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.15));
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.35);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
-        }
-        
-        .tech-card {
-            transition: all 0.3s ease;
-            background: linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.15));
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.35);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
-        }
-        
-        .tech-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.25);
-            background: linear-gradient(135deg, rgba(255,255,255,0.35), rgba(255,255,255,0.25));
-            border-color: rgba(255,255,255,0.45);
-        }
-        
-        .hero-gradient {
-            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
-        }
-        
-        .section-gradient {
-            background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
-        }
-        
-        .text-gradient {
-            background: linear-gradient(135deg, #3b82f6, #1e40af);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .btn-primary {
-            background: linear-gradient(135deg, #3b82f6, #1e40af);
-            transition: all 0.3s ease;
-        }
-        
-        .btn-primary:hover {
-            background: linear-gradient(135deg, #1e40af, #3b82f6);
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
-        }
-        
-        .certification-badge {
-            transition: all 0.3s ease;
-            background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7));
-            backdrop-filter: blur(10px);
-        }
-        
-        .certification-badge:hover {
-            transform: scale(1.05);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-        }
-        
-        /* Scroll Reveal Animations */
-        .reveal {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
-        }
-        
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        .reveal-left {
-            opacity: 0;
-            transform: translateX(-50px);
-            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
-        }
-        
-        .reveal-left.active {
-            opacity: 1;
-            transform: translateX(0);
-        }
-        
-        .reveal-right {
-            opacity: 0;
-            transform: translateX(50px);
-            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
-        }
-        
-        .reveal-right.active {
-            opacity: 1;
-            transform: translateX(0);
-        }
-        
-        .reveal-scale {
-            opacity: 0;
-            transform: scale(0.8);
-            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
-        }
-        
-        .reveal-scale.active {
-            opacity: 1;
-            transform: scale(1);
-        }
-        
-        /* Animated Counter */
-        .counter {
-            font-variant-numeric: tabular-nums;
-        }
-        
-        /* Enhanced Card Hover Effects */
-        .tech-card-3d {
-            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-            transform-style: preserve-3d;
-            background: linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.15));
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.35);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
-        }
-        
-        .tech-card-3d:hover {
-            transform: translateY(-15px) rotateX(5deg) rotateY(5deg);
-            box-shadow: 0 25px 60px rgba(0,0,0,0.35);
-            background: linear-gradient(135deg, rgba(255,255,255,0.35), rgba(255,255,255,0.25));
-            border-color: rgba(255,255,255,0.45);
-        }
-        
-        /* Particles Background */
-        #particles-canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 1;
-        }
-        
-        main {
-            position: relative;
-            z-index: 2;
-        }
-        
-        /* Smooth Scroll */
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        /* Active Navigation Indicator */
-        .nav-link {
-            position: relative;
-            transition: color 0.3s ease;
-        }
-        
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #1e40af);
-            transition: width 0.3s ease;
-        }
-        
-        .nav-link:hover::after,
-        .nav-link.active::after {
-            width: 100%;
-        }
-        
-        /* Enhanced Form Inputs */
-        .form-input {
-            transition: all 0.3s ease;
-        }
-        
-        .form-input:focus {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
-        }
-        
-        .form-input:invalid:not(:placeholder-shown) {
-            border-color: #ef4444;
-            animation: shake 0.5s;
-        }
-        
-        .form-input:valid:not(:placeholder-shown) {
-            border-color: #10b981;
-        }
-        
-        @keyframes shake {
-            0%, 100% { transform: translateX(0); }
-            25% { transform: translateX(-10px); }
-            75% { transform: translateX(10px); }
-        }
-        
-        /* Cursor Trail Effect */
-        .cursor-trail {
-            position: fixed;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.5), transparent);
-            pointer-events: none;
-            z-index: 9999;
-            mix-blend-mode: difference;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        
-        /* Loading Animation */
-        @keyframes shimmer {
-            0% { background-position: -1000px 0; }
-            100% { background-position: 1000px 0; }
-        }
-        
-        /* Tab Navigation */
-        .tab-container {
-            display: none;
-        }
-        
-        .tab-container.active {
-            display: block;
-            animation: fadeIn 0.5s ease-in;
-        }
-        
-        .tab-button {
-            transition: all 0.3s ease;
-            position: relative;
-        }
-        
-        .tab-button.active {
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(30, 64, 175, 0.2));
-            border-color: rgba(59, 130, 246, 0.5);
-        }
-        
-        .tab-button.active::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, #3b82f6, #1e40af);
-            border-radius: 2px;
-        }
-        
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        /* Section Divider */
-        .section-divider {
-            height: 200px;
-            background: linear-gradient(180deg, transparent, rgba(59, 130, 246, 0.1), transparent);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .section-divider::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100px;
-            height: 100px;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.2), transparent);
-            border-radius: 50%;
-            animation: pulse-divider 3s ease-in-out infinite;
-        }
-        
-        @keyframes pulse-divider {
-            0%, 100% {
-                transform: translate(-50%, -50%) scale(1);
-                opacity: 0.5;
-            }
-            50% {
-                transform: translate(-50%, -50%) scale(1.5);
-                opacity: 0.2;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="/css/styles.css">
 
 <!-- Google tag (gtag.js) event - delayed navigation helper -->
 <script>
@@ -1021,8 +672,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Arquitectura AWS</h3>
-                    <p class="text-slate-700 leading-relaxed">Diseño e implementación de soluciones escalables en la nube de Amazon Web Services. Optimizamos su infraestructura para <strong>máximo rendimiento</strong> y <strong>eficiencia de costos</strong>.</p>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800"><a href="/servicios/arquitectura-aws" class="hover:text-blue-600 transition-colors">Arquitectura AWS</a></h3>
+                    <p class="text-slate-700 leading-relaxed">Diseño e implementación de soluciones escalables en la nube de Amazon Web Services. Optimizamos su infraestructura para <strong>máximo rendimiento</strong> y <strong>eficiencia de costos</strong>. <a href="/servicios/arquitectura-aws" class="text-blue-600 hover:text-blue-800 font-semibold">Más información →</a></p>
                 </div>
                 <div class="tech-card tech-card-3d rounded-2xl p-8 group reveal">
                     <div class="bg-gradient-to-r from-green-500 to-blue-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
@@ -1030,8 +681,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Desarrollo Java</h3>
-                    <p class="text-slate-700 leading-relaxed">Desarrollo de aplicaciones empresariales robustas utilizando Java y frameworks modernos. Creamos <strong>soluciones a medida</strong> que impulsan el crecimiento de su negocio.</p>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800"><a href="/servicios/desarrollo-java" class="hover:text-blue-600 transition-colors">Desarrollo Java</a></h3>
+                    <p class="text-slate-700 leading-relaxed">Desarrollo de aplicaciones empresariales robustas utilizando Java y frameworks modernos. Creamos <strong>soluciones a medida</strong> que impulsan el crecimiento de su negocio. <a href="/servicios/desarrollo-java" class="text-blue-600 hover:text-blue-800 font-semibold">Más información →</a></p>
                 </div>
                 <div class="tech-card tech-card-3d rounded-2xl p-8 group reveal">
                     <div class="bg-gradient-to-r from-purple-500 to-pink-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
@@ -1048,8 +699,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Bases de Datos</h3>
-                    <p class="text-slate-700 leading-relaxed">Optimización y gestión de bases de datos SQL y NoSQL para alto rendimiento. Diseñamos estructuras de datos eficientes que mejoran la velocidad y confiabilidad de sus aplicaciones.</p>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800"><a href="/servicios/bases-datos" class="hover:text-blue-600 transition-colors">Bases de Datos</a></h3>
+                    <p class="text-slate-700 leading-relaxed">Optimización y gestión de bases de datos SQL y NoSQL para alto rendimiento. Diseñamos estructuras de datos eficientes que mejoran la velocidad y confiabilidad de sus aplicaciones. <a href="/servicios/bases-datos" class="text-blue-600 hover:text-blue-800 font-semibold">Más información →</a></p>
                 </div>
                 <div class="tech-card tech-card-3d rounded-2xl p-8 group reveal">
                     <div class="bg-gradient-to-r from-teal-500 to-cyan-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
@@ -1057,8 +708,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Business Intelligence</h3>
-                    <p class="text-slate-700 leading-relaxed">Implementación de soluciones de BI con Tableau para análisis de datos efectivo. Transformamos sus datos en insights accionables para tomar decisiones informadas.</p>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800"><a href="/servicios/business-intelligence" class="hover:text-blue-600 transition-colors">Business Intelligence</a></h3>
+                    <p class="text-slate-700 leading-relaxed">Implementación de soluciones de BI con Tableau para análisis de datos efectivo. Transformamos sus datos en insights accionables para tomar decisiones informadas. <a href="/servicios/business-intelligence" class="text-blue-600 hover:text-blue-800 font-semibold">Más información →</a></p>
                 </div>
                 <div class="tech-card tech-card-3d rounded-2xl p-8 group reveal">
                     <div class="bg-gradient-to-r from-pink-500 to-rose-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
@@ -1066,8 +717,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Desarrollo y Hosting WordPress</h3>
-                    <p class="text-slate-700 leading-relaxed">Creación y alojamiento de sitios web WordPress personalizados y optimizados. Ofrecemos soluciones web completas, desde el diseño hasta el mantenimiento continuo.</p>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800"><a href="/servicios/wordpress" class="hover:text-blue-600 transition-colors">Desarrollo y Hosting WordPress</a></h3>
+                    <p class="text-slate-700 leading-relaxed">Creación y alojamiento de sitios web WordPress personalizados y optimizados. Ofrecemos soluciones web completas, desde el diseño hasta el mantenimiento continuo. <a href="/servicios/wordpress" class="text-blue-600 hover:text-blue-800 font-semibold">Más información →</a></p>
                 </div>
             </div>
             </div>
@@ -1218,16 +869,16 @@
                 <!-- AWS -->
                 <div class="flex flex-col items-center">
                     <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center tech-card tech-card-3d">
-                        <img src="https://d1.awsstatic.com/logos/aws-logo-lockup-powered-by-Amazon_light-bluetext.svg" alt="AWS Logo" class="w-20 h-20 object-contain" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg'">
+                        <a href="/tecnologias/aws"><img src="https://d1.awsstatic.com/logos/aws-logo-lockup-powered-by-Amazon_light-bluetext.svg" alt="AWS Logo" class="w-20 h-20 object-contain" loading="lazy" decoding="async" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg'"></a>
                     </div>
                     <span class="mt-4 text-slate-700 font-medium">AWS</span>
                 </div>
                 <!-- Java -->
                 <div class="flex flex-col items-center">
                     <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center tech-card tech-card-3d">
-                        <img src="https://www.oracle.com/a/ocom/img/obic/java-card.png" alt="Java Logo" class="w-20 h-20 object-contain" onerror="this.src='https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg'">
+                        <a href="/tecnologias/java"><img src="https://www.oracle.com/a/ocom/img/obic/java-card.png" alt="Java Logo" class="w-20 h-20 object-contain" loading="lazy" decoding="async" onerror="this.src='https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg'"></a>
                     </div>
-                    <span class="mt-4 text-slate-700 font-medium">Java</span>
+                    <span class="mt-4 text-slate-700 font-medium"><a href="/tecnologias/java" class="hover:text-blue-600 transition-colors">Java</a></span>
                 </div>
                 <!-- Databases -->
                 <div class="flex flex-col items-center">
@@ -1263,16 +914,16 @@
                 <!-- Docker -->
                 <div class="flex flex-col items-center">
                     <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center tech-card tech-card-3d">
-                        <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.svg" alt="Docker Logo" class="w-20 h-20 object-contain" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg'">
+                        <a href="/tecnologias/docker"><img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.svg" alt="Docker Logo" class="w-20 h-20 object-contain" loading="lazy" decoding="async" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg'"></a>
                     </div>
-                    <span class="mt-4 text-slate-700 font-medium">Docker</span>
+                    <span class="mt-4 text-slate-700 font-medium"><a href="/tecnologias/docker" class="hover:text-blue-600 transition-colors">Docker</a></span>
                 </div>
                 <!-- Spring -->
                 <div class="flex flex-col items-center">
                     <div class="bg-white p-6 rounded-lg shadow-md w-32 h-32 flex items-center justify-center tech-card tech-card-3d">
-                        <img src="https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg" alt="Spring Logo" class="w-20 h-20 object-contain" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg'">
+                        <a href="/tecnologias/spring-boot"><img src="https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg" alt="Spring Logo" class="w-20 h-20 object-contain" loading="lazy" decoding="async" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg'"></a>
                     </div>
-                    <span class="mt-4 text-slate-700 font-medium">Spring/Spring Boot</span>
+                    <span class="mt-4 text-slate-700 font-medium"><a href="/tecnologias/spring-boot" class="hover:text-blue-600 transition-colors">Spring/Spring Boot</a></span>
                 </div>
                 <!-- Oracle Cloud Infrastructure -->
                 <div class="flex flex-col items-center">
@@ -1490,257 +1141,8 @@
         </svg>
     </a>
 
-    <!-- Google tag (gtag.js) event -->
-    <script>
-        // Interceptar el envío del formulario de contacto
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.querySelector('form[action*="getform.io"]');
-            if (form) {
-                form.addEventListener('submit', function(event) {
-                    // Disparar evento de Google Analytics
-                    if (typeof gtag === 'function') {
-                        console.log('✅ Formulario enviado - Disparando evento Google Analytics');
-                        gtag('event', 'conversion_event_contact_2', {
-                            // <event_parameters>
-                        });
-                        console.log('✅ Evento conversion_event_contact_2 enviado a Google Analytics');
-                    } else {
-                        console.error('❌ Error: gtag no está disponible');
-                    }
-                    // Permitir que el formulario se envíe normalmente (no prevenir el comportamiento por defecto)
-                });
-            } else {
-                console.warn('⚠️ Formulario no encontrado');
-            }
-        });
-    </script>
-
-    <!-- Dynamic Enhancements Script -->
-    <script>
-        (function() {
-            'use strict';
-            
-            // Scroll Reveal Animation
-            function initScrollReveal() {
-                const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
-                const windowHeight = window.innerHeight;
-                const revealPoint = 150;
-                
-                function checkReveal() {
-                    reveals.forEach(element => {
-                        const elementTop = element.getBoundingClientRect().top;
-                        if (elementTop < windowHeight - revealPoint) {
-                            element.classList.add('active');
-                        }
-                    });
-                }
-                
-                window.addEventListener('scroll', checkReveal);
-                checkReveal(); // Check on load
-            }
-            
-            // Animated Counters
-            function initCounters() {
-                const counters = document.querySelectorAll('.counter');
-                const speed = 200;
-                
-                counters.forEach(counter => {
-                    const target = parseInt(counter.getAttribute('data-target')) || parseInt(counter.textContent.replace(/\D/g, ''));
-                    const increment = target / speed;
-                    let current = 0;
-                    
-                    const updateCounter = () => {
-                        if (current < target) {
-                            current += increment;
-                            counter.textContent = Math.ceil(current) + (counter.textContent.includes('+') ? '+' : '');
-                            requestAnimationFrame(updateCounter);
-                        } else {
-                            counter.textContent = target + (counter.textContent.includes('+') ? '+' : '');
-                        }
-                    };
-                    
-                    const observer = new IntersectionObserver((entries) => {
-                        entries.forEach(entry => {
-                            if (entry.isIntersecting && !counter.classList.contains('counted')) {
-                                counter.classList.add('counted');
-                                updateCounter();
-                            }
-                        });
-                    }, { threshold: 0.5 });
-                    
-                    observer.observe(counter);
-                });
-            }
-            
-            // Particles Background
-            function initParticles() {
-                const canvas = document.createElement('canvas');
-                canvas.id = 'particles-canvas';
-                document.body.appendChild(canvas);
-                
-                const ctx = canvas.getContext('2d');
-                canvas.width = window.innerWidth;
-                canvas.height = window.innerHeight;
-                
-                const particles = [];
-                const particleCount = 60;
-                
-                class Particle {
-                    constructor() {
-                        this.x = Math.random() * canvas.width;
-                        this.y = Math.random() * canvas.height;
-                        this.size = Math.random() * 3 + 1;
-                        this.speedX = Math.random() * 0.5 - 0.25;
-                        this.speedY = Math.random() * 0.5 - 0.25;
-                        this.opacity = Math.random() * 0.5 + 0.2;
-                    }
-                    
-                    update() {
-                        this.x += this.speedX;
-                        this.y += this.speedY;
-                        
-                        if (this.x > canvas.width) this.x = 0;
-                        if (this.x < 0) this.x = canvas.width;
-                        if (this.y > canvas.height) this.y = 0;
-                        if (this.y < 0) this.y = canvas.height;
-                    }
-                    
-                    draw() {
-                        ctx.fillStyle = `rgba(59, 130, 246, ${this.opacity})`;
-                        ctx.beginPath();
-                        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                        ctx.fill();
-                    }
-                }
-                
-                for (let i = 0; i < particleCount; i++) {
-                    particles.push(new Particle());
-                }
-                
-                function animate() {
-                    ctx.clearRect(0, 0, canvas.width, canvas.height);
-                    particles.forEach(particle => {
-                        particle.update();
-                        particle.draw();
-                    });
-                    requestAnimationFrame(animate);
-                }
-                
-                window.addEventListener('resize', () => {
-                    canvas.width = window.innerWidth;
-                    canvas.height = window.innerHeight;
-                });
-                
-                animate();
-            }
-            
-            // Active Navigation Indicator
-            function initActiveNav() {
-                const sections = document.querySelectorAll('section[id]');
-                const navLinks = document.querySelectorAll('.nav-link');
-                
-                function updateActiveNav() {
-                    const scrollY = window.pageYOffset;
-                    
-                    sections.forEach(section => {
-                        const sectionTop = section.offsetTop - 100;
-                        const sectionHeight = section.offsetHeight;
-                        const sectionId = section.getAttribute('id');
-                        
-                        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-                            navLinks.forEach(link => {
-                                link.classList.remove('active');
-                                if (link.getAttribute('href') === `#${sectionId}`) {
-                                    link.classList.add('active');
-                                }
-                            });
-                        }
-                    });
-                }
-                
-                window.addEventListener('scroll', updateActiveNav);
-                updateActiveNav();
-            }
-            
-            // Enhanced Form Validation
-            function initFormValidation() {
-                const inputs = document.querySelectorAll('.form-input');
-                
-                inputs.forEach(input => {
-                    input.addEventListener('blur', function() {
-                        if (this.value && !this.validity.valid) {
-                            this.style.borderColor = '#ef4444';
-                        } else if (this.value && this.validity.valid) {
-                            this.style.borderColor = '#10b981';
-                        }
-                    });
-                    
-                    input.addEventListener('input', function() {
-                        if (this.value && this.validity.valid) {
-                            this.style.borderColor = '#10b981';
-                        }
-                    });
-                });
-            }
-            
-            // Smooth Scroll Enhancement
-            function initSmoothScroll() {
-                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                    anchor.addEventListener('click', function (e) {
-                        const href = this.getAttribute('href');
-                        if (href !== '#' && href.length > 1) {
-                            e.preventDefault();
-                            const target = document.querySelector(href);
-                            if (target) {
-                                const headerOffset = 80;
-                                const elementPosition = target.getBoundingClientRect().top;
-                                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-                                
-                                window.scrollTo({
-                                    top: offsetPosition,
-                                    behavior: 'smooth'
-                                });
-                            }
-                        }
-                    });
-                });
-            }
-            
-            // Tab Navigation
-            function initTabs() {
-                const tabButtons = document.querySelectorAll('.tab-button');
-                const tabContainers = document.querySelectorAll('.tab-container');
-                
-                tabButtons.forEach(button => {
-                    button.addEventListener('click', function() {
-                        const targetTab = this.getAttribute('data-tab');
-                        
-                        // Remove active class from all buttons and containers
-                        tabButtons.forEach(btn => btn.classList.remove('active'));
-                        tabContainers.forEach(container => container.classList.remove('active'));
-                        
-                        // Add active class to clicked button and corresponding container
-                        this.classList.add('active');
-                        const targetContainer = document.getElementById(`tab-${targetTab}`);
-                        if (targetContainer) {
-                            targetContainer.classList.add('active');
-                        }
-                    });
-                });
-            }
-            
-            // Initialize all features
-            document.addEventListener('DOMContentLoaded', function() {
-                initScrollReveal();
-                initCounters();
-                initParticles();
-                initActiveNav();
-                initFormValidation();
-                initSmoothScroll();
-                initTabs();
-            });
-        })();
-    </script>
+    <!-- Main JavaScript -->
+    <script src="/js/main.js"></script>
 </body>
 </html>
 

@@ -1,0 +1,187 @@
+{
+  "services": [
+    {
+      "id": "arquitectura-aws",
+      "name": "Arquitectura AWS",
+      "slug": "arquitectura-aws",
+      "description": "Diseño e implementación de soluciones escalables en la nube de Amazon Web Services",
+      "keywords": ["arquitectura aws", "aws architect", "consultoría aws", "aws solutions architect", "cloud architecture", "aws cloudformation"],
+      "icon": "cloud"
+    },
+    {
+      "id": "desarrollo-java",
+      "name": "Desarrollo Java",
+      "slug": "desarrollo-java",
+      "description": "Desarrollo de aplicaciones empresariales robustas utilizando Java y frameworks modernos",
+      "keywords": ["java developer", "desarrollo java", "java programmer", "spring developer", "spring boot developer", "j2ee developer"],
+      "icon": "code"
+    },
+    {
+      "id": "devops",
+      "name": "DevOps as a Service",
+      "slug": "devops",
+      "description": "Optimización de procesos de desarrollo y operaciones con servicios de DevOps",
+      "keywords": ["devops", "devops argentina", "ci cd", "docker", "kubernetes", "automation"],
+      "icon": "settings"
+    },
+    {
+      "id": "migracion-cloud",
+      "name": "Migración a la Nube",
+      "slug": "migracion-cloud",
+      "description": "Asesoramiento y ejecución de migraciones de infraestructura a AWS",
+      "keywords": ["migración cloud", "cloud migration", "aws migration", "migración a aws"],
+      "icon": "arrow-up"
+    },
+    {
+      "id": "capacitacion-aws",
+      "name": "Capacitación AWS",
+      "slug": "capacitacion-aws",
+      "description": "Cursos personalizados y formación en equipo sobre Amazon Web Services",
+      "keywords": ["aws training", "capacitación aws", "aws courses", "aws certification training"],
+      "icon": "book"
+    },
+    {
+      "id": "bases-datos",
+      "name": "Bases de Datos",
+      "slug": "bases-datos",
+      "description": "Optimización y gestión de bases de datos SQL y NoSQL para alto rendimiento",
+      "keywords": ["database", "mysql", "oracle database", "sql server", "database optimization"],
+      "icon": "database"
+    },
+    {
+      "id": "business-intelligence",
+      "name": "Business Intelligence",
+      "slug": "business-intelligence",
+      "description": "Implementación de soluciones de BI con Tableau para análisis de datos efectivo",
+      "keywords": ["tableau", "business intelligence", "bi", "data analytics", "data visualization"],
+      "icon": "chart"
+    },
+    {
+      "id": "wordpress",
+      "name": "Desarrollo WordPress",
+      "slug": "wordpress",
+      "description": "Creación y alojamiento de sitios web WordPress personalizados y optimizados",
+      "keywords": ["wordpress", "wordpress developer", "wordpress hosting", "wordpress argentina"],
+      "icon": "globe"
+    }
+  ],
+  "technologies": [
+    {
+      "id": "aws",
+      "name": "Amazon Web Services",
+      "slug": "aws",
+      "description": "Servicios cloud escalables y seguros de Amazon",
+      "keywords": ["aws", "amazon web services", "aws argentina", "ec2", "s3", "lambda", "rds"],
+      "icon": "aws"
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "slug": "java",
+      "description": "Lenguaje de programación empresarial robusto y escalable",
+      "keywords": ["java", "java developer", "java programming", "java argentina"],
+      "icon": "java"
+    },
+    {
+      "id": "spring-boot",
+      "name": "Spring Boot",
+      "slug": "spring-boot",
+      "description": "Framework Java para desarrollo de aplicaciones empresariales",
+      "keywords": ["spring boot", "spring framework", "spring developer", "spring argentina"],
+      "icon": "spring"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "slug": "docker",
+      "description": "Plataforma de contenedores para desarrollo y despliegue",
+      "keywords": ["docker", "containers", "docker argentina", "containerization"],
+      "icon": "docker"
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "slug": "kubernetes",
+      "description": "Orquestación de contenedores para aplicaciones escalables",
+      "keywords": ["kubernetes", "k8s", "container orchestration", "kubernetes argentina"],
+      "icon": "kubernetes"
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL",
+      "slug": "mysql",
+      "description": "Sistema de gestión de bases de datos relacionales",
+      "keywords": ["mysql", "database", "mysql argentina", "sql database"],
+      "icon": "database"
+    },
+    {
+      "id": "oracle",
+      "name": "Oracle Database",
+      "slug": "oracle",
+      "description": "Base de datos empresarial de Oracle",
+      "keywords": ["oracle", "oracle database", "oracle argentina", "oracle dba"],
+      "icon": "database"
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "slug": "python",
+      "description": "Lenguaje de programación versátil para desarrollo y automatización",
+      "keywords": ["python", "python developer", "python argentina", "django"],
+      "icon": "python"
+    }
+  ],
+  "locations": [
+    {
+      "id": "argentina",
+      "name": "Argentina",
+      "slug": "argentina",
+      "keywords": ["it professionals argentina", "aws argentina", "java developer argentina", "devops argentina"]
+    },
+    {
+      "id": "buenos-aires",
+      "name": "Buenos Aires",
+      "slug": "buenos-aires",
+      "keywords": ["it professionals buenos aires", "aws buenos aires", "java developer buenos aires"]
+    },
+    {
+      "id": "escobar",
+      "name": "Escobar",
+      "slug": "escobar",
+      "keywords": ["it professionals escobar", "aws escobar", "consultoría it escobar"]
+    }
+  ],
+  "professionTypes": [
+    {
+      "id": "aws-architect",
+      "name": "Arquitecto AWS",
+      "slug": "arquitecto-aws",
+      "keywords": ["aws architect", "arquitecto aws", "aws solutions architect", "cloud architect"]
+    },
+    {
+      "id": "java-developer",
+      "name": "Desarrollador Java",
+      "slug": "desarrollador-java",
+      "keywords": ["java developer", "desarrollador java", "java programmer", "java engineer"]
+    },
+    {
+      "id": "devops-engineer",
+      "name": "Ingeniero DevOps",
+      "slug": "ingeniero-devops",
+      "keywords": ["devops engineer", "ingeniero devops", "devops specialist", "sre engineer"]
+    },
+    {
+      "id": "cloud-consultant",
+      "name": "Consultor Cloud",
+      "slug": "consultor-cloud",
+      "keywords": ["cloud consultant", "consultor cloud", "aws consultant", "cloud expert"]
+    },
+    {
+      "id": "cto-freelance",
+      "name": "CTO Freelance",
+      "slug": "cto-freelance",
+      "keywords": ["cto freelance", "fractional cto", "interim cto", "cto consultant"]
+    }
+  ]
+}
+

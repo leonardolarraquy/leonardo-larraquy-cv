@@ -7,81 +7,321 @@
   <!-- Homepage -->
   <url>
     <loc>https://cloudexperts.com.ar/</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-12-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Services Section -->
+  <!-- Service: Arquitectura AWS -->
+  <url>
+    <loc>https://cloudexperts.com.ar/servicios/arquitectura-aws</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Service: Desarrollo Java -->
+  <url>
+    <loc>https://cloudexperts.com.ar/servicios/desarrollo-java</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Service: DevOps as a Service -->
+  <url>
+    <loc>https://cloudexperts.com.ar/servicios/devops</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Service: Migración a la Nube -->
+  <url>
+    <loc>https://cloudexperts.com.ar/servicios/migracion-cloud</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Service: Capacitación AWS -->
+  <url>
+    <loc>https://cloudexperts.com.ar/servicios/capacitacion-aws</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Service: Bases de Datos -->
+  <url>
+    <loc>https://cloudexperts.com.ar/servicios/bases-datos</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Service: Business Intelligence -->
+  <url>
+    <loc>https://cloudexperts.com.ar/servicios/business-intelligence</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Service: Desarrollo WordPress -->
+  <url>
+    <loc>https://cloudexperts.com.ar/servicios/wordpress</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Technology: Amazon Web Services -->
+  <url>
+    <loc>https://cloudexperts.com.ar/tecnologias/aws</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Technology: Java -->
+  <url>
+    <loc>https://cloudexperts.com.ar/tecnologias/java</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Technology: Spring Boot -->
+  <url>
+    <loc>https://cloudexperts.com.ar/tecnologias/spring-boot</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Technology: Docker -->
+  <url>
+    <loc>https://cloudexperts.com.ar/tecnologias/docker</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Technology: Kubernetes -->
+  <url>
+    <loc>https://cloudexperts.com.ar/tecnologias/kubernetes</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Technology: MySQL -->
+  <url>
+    <loc>https://cloudexperts.com.ar/tecnologias/mysql</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Technology: Oracle Database -->
+  <url>
+    <loc>https://cloudexperts.com.ar/tecnologias/oracle</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Technology: Python -->
+  <url>
+    <loc>https://cloudexperts.com.ar/tecnologias/python</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Arquitecto AWS in Argentina -->
+  <url>
+    <loc>https://cloudexperts.com.ar/profesionales/arquitecto-aws-argentina</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Arquitecto AWS in Buenos Aires -->
+  <url>
+    <loc>https://cloudexperts.com.ar/profesionales/arquitecto-aws-buenos-aires</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Arquitecto AWS in Escobar -->
+  <url>
+    <loc>https://cloudexperts.com.ar/profesionales/arquitecto-aws-escobar</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Desarrollador Java in Argentina -->
+  <url>
+    <loc>https://cloudexperts.com.ar/profesionales/desarrollador-java-argentina</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Desarrollador Java in Buenos Aires -->
+  <url>
+    <loc>https://cloudexperts.com.ar/profesionales/desarrollador-java-buenos-aires</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Desarrollador Java in Escobar -->
+  <url>
+    <loc>https://cloudexperts.com.ar/profesionales/desarrollador-java-escobar</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Ingeniero DevOps in Argentina -->
+  <url>
+    <loc>https://cloudexperts.com.ar/profesionales/ingeniero-devops-argentina</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Ingeniero DevOps in Buenos Aires -->
+  <url>
+    <loc>https://cloudexperts.com.ar/profesionales/ingeniero-devops-buenos-aires</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Ingeniero DevOps in Escobar -->
+  <url>
+    <loc>https://cloudexperts.com.ar/profesionales/ingeniero-devops-escobar</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Consultor Cloud in Argentina -->
+  <url>
+    <loc>https://cloudexperts.com.ar/profesionales/consultor-cloud-argentina</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Consultor Cloud in Buenos Aires -->
+  <url>
+    <loc>https://cloudexperts.com.ar/profesionales/consultor-cloud-buenos-aires</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Consultor Cloud in Escobar -->
+  <url>
+    <loc>https://cloudexperts.com.ar/profesionales/consultor-cloud-escobar</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- CTO Freelance in Argentina -->
+  <url>
+    <loc>https://cloudexperts.com.ar/profesionales/cto-freelance-argentina</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- CTO Freelance in Buenos Aires -->
+  <url>
+    <loc>https://cloudexperts.com.ar/profesionales/cto-freelance-buenos-aires</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- CTO Freelance in Escobar -->
+  <url>
+    <loc>https://cloudexperts.com.ar/profesionales/cto-freelance-escobar</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Location: Argentina -->
+  <url>
+    <loc>https://cloudexperts.com.ar/ubicaciones/argentina</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Location: Buenos Aires -->
+  <url>
+    <loc>https://cloudexperts.com.ar/ubicaciones/buenos-aires</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Location: Escobar -->
+  <url>
+    <loc>https://cloudexperts.com.ar/ubicaciones/escobar</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Section: servicios -->
   <url>
     <loc>https://cloudexperts.com.ar/#servicios</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-12-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Experience Section -->
-  <url>
-    <loc>https://cloudexperts.com.ar/#experiencia</loc>
-    <lastmod>2024-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Technologies Section -->
+  <!-- Section: tecnologias -->
   <url>
     <loc>https://cloudexperts.com.ar/#tecnologias</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-12-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Certifications Section -->
+  <!-- Section: certificaciones -->
   <url>
     <loc>https://cloudexperts.com.ar/#certificaciones</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-12-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Contact Section -->
-  <url>
-    <loc>https://cloudexperts.com.ar/#contacto</loc>
-    <lastmod>2024-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Training Section -->
-  <url>
-    <loc>https://cloudexperts.com.ar/#capacitacion</loc>
-    <lastmod>2024-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- DevOps Section -->
-  <url>
-    <loc>https://cloudexperts.com.ar/#devops</loc>
-    <lastmod>2024-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Migration Section -->
-  <url>
-    <loc>https://cloudexperts.com.ar/#migracion</loc>
-    <lastmod>2024-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Clients Section -->
+  <!-- Section: clientes -->
   <url>
     <loc>https://cloudexperts.com.ar/#clientes</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-12-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Section: contacto -->
+  <url>
+    <loc>https://cloudexperts.com.ar/#contacto</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
 </urlset>
