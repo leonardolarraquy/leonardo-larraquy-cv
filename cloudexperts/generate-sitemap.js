@@ -33,7 +33,7 @@ let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 data.services.forEach(service => {
     sitemap += `  <!-- Service: ${service.name} -->
   <url>
-    <loc>${BASE_URL}/servicios/${service.slug}</loc>
+    <loc>${BASE_URL}/servicios/${service.slug}.html</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -46,7 +46,7 @@ data.services.forEach(service => {
 data.technologies.forEach(tech => {
     sitemap += `  <!-- Technology: ${tech.name} -->
   <url>
-    <loc>${BASE_URL}/tecnologias/${tech.slug}</loc>
+    <loc>${BASE_URL}/tecnologias/${tech.slug}.html</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -60,7 +60,7 @@ data.professionTypes.forEach(prof => {
     data.locations.forEach(location => {
         sitemap += `  <!-- ${prof.name} in ${location.name} -->
   <url>
-    <loc>${BASE_URL}/profesionales/${prof.slug}-${location.slug}</loc>
+    <loc>${BASE_URL}/profesionales/${prof.slug}-${location.slug}.html</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -74,7 +74,7 @@ data.professionTypes.forEach(prof => {
 data.locations.forEach(location => {
     sitemap += `  <!-- Location: ${location.name} -->
   <url>
-    <loc>${BASE_URL}/ubicaciones/${location.slug}</loc>
+    <loc>${BASE_URL}/ubicaciones/${location.slug}.html</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

@@ -9,6 +9,22 @@
       "icon": "cloud"
     },
     {
+      "id": "desarrollo-fullstack",
+      "name": "Desarrollo Full Stack",
+      "slug": "desarrollo-fullstack",
+      "description": "Desarrollo de aplicaciones web modernas con React, Next.js, Node.js y TypeScript",
+      "keywords": ["fullstack developer", "desarrollo fullstack", "react developer", "nextjs developer", "nodejs developer", "typescript developer"],
+      "icon": "code"
+    },
+    {
+      "id": "desarrollo-mobile",
+      "name": "Desarrollo Mobile",
+      "slug": "desarrollo-mobile",
+      "description": "Aplicaciones móviles nativas y multiplataforma con React Native y Flutter",
+      "keywords": ["mobile developer", "react native", "flutter developer", "desarrollo apps móviles", "ios developer", "android developer"],
+      "icon": "mobile"
+    },
+    {
       "id": "desarrollo-java",
       "name": "Desarrollo Java",
       "slug": "desarrollo-java",
@@ -73,6 +89,46 @@
       "description": "Servicios cloud escalables y seguros de Amazon",
       "keywords": ["aws", "amazon web services", "aws argentina", "ec2", "s3", "lambda", "rds"],
       "icon": "aws"
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "slug": "react",
+      "description": "Biblioteca JavaScript para construir interfaces de usuario modernas y reactivas",
+      "keywords": ["react", "react developer", "reactjs", "frontend developer argentina", "react argentina"],
+      "icon": "react"
+    },
+    {
+      "id": "react-native",
+      "name": "React Native",
+      "slug": "react-native",
+      "description": "Framework para desarrollo de aplicaciones móviles multiplataforma con JavaScript",
+      "keywords": ["react native", "mobile development", "ios", "android", "apps móviles argentina"],
+      "icon": "mobile"
+    },
+    {
+      "id": "nextjs",
+      "name": "Next.js",
+      "slug": "nextjs",
+      "description": "Framework React para aplicaciones web con SSR y generación estática",
+      "keywords": ["nextjs", "next.js", "react framework", "ssr", "static site generation"],
+      "icon": "nextjs"
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js",
+      "slug": "nodejs",
+      "description": "Entorno de ejecución JavaScript para backend escalable y de alto rendimiento",
+      "keywords": ["nodejs", "node.js", "javascript backend", "express", "backend argentina"],
+      "icon": "nodejs"
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "slug": "typescript",
+      "description": "JavaScript tipado para desarrollo robusto y mantenible",
+      "keywords": ["typescript", "ts", "typed javascript", "frontend development"],
+      "icon": "typescript"
     },
     {
       "id": "java",
@@ -157,6 +213,18 @@
       "name": "Arquitecto AWS",
       "slug": "arquitecto-aws",
       "keywords": ["aws architect", "arquitecto aws", "aws solutions architect", "cloud architect"]
+    },
+    {
+      "id": "fullstack-developer",
+      "name": "Desarrollador Full Stack",
+      "slug": "desarrollador-fullstack",
+      "keywords": ["fullstack developer", "desarrollador fullstack", "react developer", "nodejs developer", "full stack argentina"]
+    },
+    {
+      "id": "mobile-developer",
+      "name": "Desarrollador Mobile",
+      "slug": "desarrollador-mobile",
+      "keywords": ["mobile developer", "react native developer", "desarrollador apps", "flutter developer", "ios android developer"]
     },
     {
       "id": "java-developer",
