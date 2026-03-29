@@ -8,14 +8,18 @@
     <style>
         :root { --primary: #3b82f6; --primary-dark: #1e40af; --text: #334155; }
         * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; box-sizing: border-box; }
-        html, body { height: 100%; min-height: 210mm; margin: 0; }
+        html, body { min-height: 210mm; margin: 0; }
+        html { height: auto; }
+        body { min-height: 100vh; height: auto; }
         body { font-family: 'Inter', sans-serif; padding: 0; color: var(--text); background: #e2e8f0; }
-        .page { width: 297mm; height: 210mm; padding: 5mm 8mm; margin: 0 auto; background: #fff; display: flex; flex-direction: column; overflow: hidden; }
-        .hero { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; padding: 10px 18px; border-radius: 6px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; flex-shrink: 0; }
+        .page { width: 297mm; min-height: 210mm; height: auto; padding: 5mm 8mm; margin: 0 auto; background: #fff; display: flex; flex-direction: column; overflow: visible; }
+        .hero { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; padding: 10px 18px; border-radius: 6px; display: flex; justify-content: space-between; align-items: center; gap: 14px; margin-bottom: 6px; flex-shrink: 0; }
+        .hero > div:first-child { min-width: 0; flex: 1; }
+        .hero-right { flex-shrink: 0; align-self: center; }
+        .hero-right .badge-tag { display: inline-block; border: 1px solid rgba(255,255,255,0.6); padding: 8px 14px; border-radius: 50px; font-weight: 700; font-size: 11px; letter-spacing: 0.04em; line-height: 1.25; text-align: center; text-transform: uppercase; }
         .hero h1 { font-size: 22px; margin: 0; line-height: 1.2; font-weight: 700; }
         .hero .sub { font-size: 14px; color: #93c5fd; margin-top: 2px; }
         .hero-meta { font-size: 12px; opacity: 0.95; margin-top: 4px; }
-        .hero-right .badge-tag { border: 1px solid rgba(255,255,255,0.6); padding: 4px 12px; border-radius: 50px; font-weight: 700; font-size: 12px; }
         .badges-row { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; }
         .badge-pill { display: inline-flex; align-items: center; gap: 4px; background: rgba(255,255,255,0.2); padding: 4px 10px; border-radius: 50px; font-size: 11px; font-weight: 600; color: white; text-decoration: none; border: 1px solid rgba(255,255,255,0.4); }
         .badge-pill img { height: 16px; }
@@ -27,77 +31,97 @@
         .trust-ul { list-style: none; margin: 0; padding: 0; font-size: 11px; }
         .trust-ul li { padding: 2px 0; }
         .trust-ul li::before { content: "✓ "; color: var(--primary); font-weight: bold; }
-        .grid-main { display: grid; grid-template-columns: 1.3fr 1fr; gap: 8px; flex: 1; min-height: 0; }
-        .col-left { display: flex; flex-direction: column; padding: 8px 10px; min-height: 0; }
-        .col-right { display: grid; grid-template-rows: 1fr 1fr; gap: 6px; min-height: 0; }
+        .main-body { flex: 1 1 auto; min-height: min-content; display: flex; flex-direction: column; gap: 6px; overflow: visible; }
+        .grid-main { display: grid; grid-template-columns: 1.3fr 1fr; gap: 8px; flex: 1 1 auto; align-items: start; min-height: min-content; overflow: visible; }
+        .col-left { display: flex; flex-direction: column; padding: 8px 10px; min-height: min-content; overflow: visible; }
+        .col-right { display: flex; flex-direction: column; min-height: min-content; padding: 8px 10px; overflow: visible; }
+        .clients-row { flex-shrink: 0; padding: 0 10px 2px; overflow: visible; }
+        .clients-row .st { margin-bottom: 4px; white-space: nowrap; }
+        .col-right > .st { white-space: nowrap; font-size: 14px; }
         .st { font-size: 15px; font-weight: 700; color: var(--primary-dark); margin-bottom: 6px; border-bottom: 2px solid var(--primary); padding-bottom: 4px; flex-shrink: 0; }
-        .sol { padding: 8px 10px; background: #f1f5f9; border-radius: 4px; font-size: 12px; line-height: 1.4; margin-bottom: 6px; border-left: 4px solid var(--primary); }
-        .sol b { color: var(--primary-dark); font-size: 13px; display: block; margin-bottom: 2px; }
-        .stack-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(4, 1fr); gap: 6px; padding: 8px; background: #f8fafc; border-radius: 6px; min-height: 0; }
-        .stack-item { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 4px; }
-        .stack-item img { width: 36px; height: 36px; object-fit: contain; }
-        .stack-item span { font-size: 10px; font-weight: 600; color: #475569; margin-top: 2px; }
-        .client-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); gap: 6px; padding: 8px; background: #f8fafc; border-radius: 6px; min-height: 0; align-items: center; justify-items: center; }
+        .solutions-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; align-content: start; }
+        .sol { padding: 8px 10px; background: #f1f5f9; border-radius: 4px; font-size: 11px; line-height: 1.35; border-left: 4px solid var(--primary); box-shadow: 0 1px 2px rgba(30, 64, 175, 0.06); overflow: visible; min-height: min-content; }
+        .sol b { color: var(--primary-dark); font-size: 12px; display: block; margin-bottom: 3px; }
+        .stack-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(4, auto); gap: 4px; padding: 6px; background: #f8fafc; border-radius: 6px; min-height: min-content; overflow: visible; }
+        .stack-item { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2px; }
+        .stack-item img { width: 32px; height: 32px; object-fit: contain; }
+        .stack-item span { font-size: 9px; font-weight: 600; color: #475569; margin-top: 1px; }
+        .client-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 6px 10px; padding: 8px 10px; background: #f8fafc; border-radius: 6px; align-items: center; justify-items: center; }
         .client-item { display: flex; flex-direction: column; align-items: center; justify-content: center; }
-        .client-item img { max-height: 42px; max-width: 64px; object-fit: contain; }
-        .client-item span { font-size: 10px; font-weight: bold; color: #555; margin-top: 2px; }
-        .testimonial { padding: 8px 10px; background: #eff6ff; border-radius: 4px; border-left: 4px solid var(--primary); font-size: 12px; margin-top: 6px; }
-        .testimonial .q { font-style: italic; color: #475569; }
-        .testimonial .a { font-weight: 700; color: var(--primary-dark); margin-top: 4px; }
-        .cta { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; padding: 8px 16px; border-radius: 6px; display: flex; justify-content: space-between; align-items: center; margin-top: 6px; flex-wrap: wrap; gap: 8px; font-size: 13px; flex-shrink: 0; }
-        .cta a { color: #93c5fd; font-weight: bold; text-decoration: none; }
-        @media print { body { background: none; } .page { margin: 0; box-shadow: none; width: 297mm; height: 210mm; } @page { size: landscape; margin: 0; } }
+        .client-item img { max-height: 48px; max-width: 96px; width: auto; height: auto; object-fit: contain; }
+        .client-item span { font-size: 9px; font-weight: bold; color: #555; margin-top: 4px; text-align: center; line-height: 1.15; }
+        .testimonials-section { flex-shrink: 0; margin-top: 4px; padding: 6px 10px; background: linear-gradient(180deg, #1e3a8a 0%, #1e40af 100%); border-radius: 6px; color: #fff; }
+        .testimonials-section .th { font-size: 12px; font-weight: 800; letter-spacing: 0.02em; margin: 0 0 2px 0; }
+        .testimonials-section .tsub { font-size: 9px; color: #bfdbfe; margin: 0 0 6px 0; line-height: 1.35; }
+        .testimonials-section .tsub a { color: #93c5fd; font-weight: 600; }
+        .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+        .testimonial-card { background: #fff; color: var(--text); border-radius: 5px; padding: 6px 8px; border: 1px solid #93c5fd; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12); }
+        .testimonial-card .q { font-size: 10px; font-style: italic; color: #475569; line-height: 1.35; margin: 0; }
+        .testimonial-card .q::before { content: "\201C"; color: var(--primary); font-weight: 800; font-style: normal; }
+        .testimonial-card .q::after { content: "\201D"; color: var(--primary); font-weight: 800; font-style: normal; }
+        .testimonial-card .a { font-size: 9px; font-weight: 700; color: var(--primary-dark); margin-top: 4px; }
+        .cta { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; padding: 6px 14px; border-radius: 6px; margin-top: 4px; flex-shrink: 0; font-size: 12px; }
+        .cta-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 20px; }
+        .cta-pitch { font-size: 11px; line-height: 1.35; max-width: 46%; flex: 1; min-width: 200px; }
+        .cta-pitch strong { display: block; font-size: 12px; margin-bottom: 3px; color: #fff; }
+        .cta-channels { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px; }
+        .cta-contact { display: inline-flex; align-items: center; gap: 6px; color: #93c5fd; font-weight: 700; text-decoration: none; }
+        .cta-contact:hover { text-decoration: underline; }
+        .cta-contact .cta-ico { width: 18px; height: 18px; flex-shrink: 0; }
+        .cta-contact img.cta-ico { display: block; }
+        @media print { body { background: none; } .page { margin: 0; box-shadow: none; width: 297mm; min-height: 210mm; height: auto; overflow: visible; } @page { size: landscape; margin: 0; } }
     </style>
 </head>
 <body>
     <div class="page">
         <div class="hero">
             <div>
-                <h1>¿Proyecto nuevo y no sabés por dónde arrancar?</h1>
-                <p class="sub">CloudExperts.com.ar — Te guiamos desde la idea hasta el Go-Live. Arquitectura, stack, presupuesto.</p>
-                <p class="hero-meta">Argentina · IT Director · Solutions Architect · 23 años · Harvard</p>
+                <h1>¿Proyecto nuevo y no sabés por dónde empezar?</h1>
+                <p class="sub">CloudExperts.com.ar — Te acompañamos desde que solo tenés la idea hasta el día en que tu solución está en vivo y funcionando: orden, tiempos y presupuesto claros.</p>
+                <p class="hero-meta">Argentina · 23 años liderando proyectos digitales · Referencias en empresas y equipos de la región</p>
                 <div class="badges-row">
                     <a href="https://www.upwork.com/freelancers/~01e041a1e7a13b650d" target="_blank" class="badge-pill"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Upwork-logo.svg" alt="Upwork">Top Rated</a>
                     <a href="https://www.credly.com/users/leonardo-lopez-larraquy/" target="_blank" class="badge-pill"><img src="https://images.icon-icons.com/3911/PNG/128/credly_logo_icon_247258.png" alt="Credly">Scrum · ITIL</a>
                     <a href="https://www.linkedin.com/in/leonardolarraquy/" target="_blank" class="badge-pill"><img src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="LinkedIn">6k+ conexiones</a>
                 </div>
             </div>
-            <div class="hero-right"><span class="badge-tag">CONSULTORÍA PROYECTOS</span></div>
+            <div class="hero-right"><span class="badge-tag">Consultoría de<br>proyectos</span></div>
         </div>
 
         <div class="mid-bar">
-            <div class="step"><span class="n">1</span><div><b>Charlamos 15 min</b><span class="t">Vos contás la idea. Nosotros entendemos el negocio y el contexto.</span></div></div>
-            <div class="step"><span class="n">2</span><div><b>Propuesta en 48h</b><span class="t">Alcance, arquitectura recomendada, stack, tiempos y presupuesto.</span></div></div>
-            <div class="step"><span class="n">3</span><div><b>Arrancamos cuando vos digas</b><span class="t">Cero presión. Vos elegís el ritmo.</span></div></div>
+            <div class="step"><span class="n">1</span><div><b>Primera charla (15 min)</b><span class="t">Empezás contando qué querés lograr. Escuchamos el negocio y el contexto para que nadie hable en vacío.</span></div></div>
+            <div class="step"><span class="n">2</span><div><b>Propuesta en 48 h</b><span class="t">Recibís por escrito qué se hace, en qué orden, cuánto puede costar y cuánto lleva. Decidís con datos, no con suposiciones.</span></div></div>
+            <div class="step"><span class="n">3</span><div><b>Cuando vos digas</b><span class="t">Si encaja, seguimos. Si no, te llevás el mapa igual. Vos marcás el ritmo; nosotros el método.</span></div></div>
             <div style="border-left: 1px solid #bfdbfe; padding-left: 12px; min-width: 140px;">
                 <b style="font-size: 12px; color: var(--primary-dark); display: block; margin-bottom: 4px;">Sin compromisos</b>
-                <ul class="trust-ul"><li>Consultoría inicial gratis</li><li>Respuesta &lt;24h</li><li>Propuesta sin obligación</li><li>Roadmap claro</li></ul>
+                <ul class="trust-ul"><li>Primera consulta sin costo</li><li>Te respondemos en menos de 24 h</li><li>Propuesta sin obligación de contratar</li><li>Hoja de ruta clara: qué viene primero y qué después</li></ul>
             </div>
         </div>
 
-        <div class="grid-main">
-            <div class="col-left">
-                <div class="st">Nuestras soluciones</div>
-                <div class="sol"><b>Discovery y definición</b>Requerimientos, alcance, riesgos. Todo claro antes de arrancar. Sin sorpresas. Posgrado en Dirección Estratégica de Sistemas.</div>
-                <div class="sol"><b>Arquitectura y stack</b>Cloud, Full-stack, APIs. Diseño pensado para escalar. AWS, React, Node, Python. Soluciones probadas en 50+ proyectos.</div>
-                <div class="sol"><b>Estimaciones realistas</b>Costos, tiempos, dependencias. Propuesta en 48h. Presupuesto transparente. Entregas incrementales con Scrum.</div>
-                <div class="sol"><b>Project management</b>Scrum, entregas incrementales. Visibilidad constante. 23 años de experiencia. IT Director, Solutions Architect.</div>
-                <div class="sol"><b>Implementación y Go-Live</b>Llegamos hasta el final. Soporte post-lanzamiento. Tu éxito es nuestro éxito. Harvard E-Commerce.</div>
-                <div class="testimonial"><div class="q">"Leo comunica muy bien sus ideas y estrategias. Te apoya durante todo el camino."</div><div class="a">— Paulo Gonzalez, ex Wavy</div></div>
-            </div>
-            <div class="col-right">
-                <div>
+        <div class="main-body">
+            <div class="grid-main">
+                <div class="col-left">
+                    <div class="st">De la idea al lanzamiento (sin perderte)</div>
+                    <div class="solutions-grid">
+                        <div class="sol"><b>Claridad al inicio</b>Antes de construir nada, dejamos fijo qué problema resolvemos, qué incluye el proyecto y qué riesgos conviene mirar. Así no hay sorpresas a mitad de camino.</div>
+                        <div class="sol"><b>Diseño de la solución</b>Definimos cómo debe funcionar para que aguante más usuarios, datos y años. Las opciones técnicas te las explicamos en lenguaje de negocio.</div>
+                        <div class="sol"><b>Números en los que podés confiar</b>Plazos, costos y dependencias con la franqueza de quien ya hizo esto docenas de veces. Sabés qué esperar antes de comprometer presupuesto.</div>
+                        <div class="sol"><b>Siempre sabés en qué etapa estás</b>Entregas chicas, visibles y frecuentes: ves avances reales, no solo promesas. 23 años dirigiendo equipos y proyectos complejos.</div>
+                        <div class="sol" style="grid-column: 1 / -1;"><b>Hasta que esté en producción</b>No desaparecemos el día del “listo”: acompañamos a que el sistema sea estable y tu equipo se sienta respaldado. Tu éxito es el cierre de nuestro trabajo.</div>
+                    </div>
+                </div>
+                <div class="col-right">
                     <div class="st">Stack tecnológico</div>
                     <div class="stack-grid">
                         <div class="stack-item"><img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS"><span>AWS</span></div>
                         <div class="stack-item"><img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="React"><span>React</span></div>
                         <div class="stack-item"><img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="Spring"><span>Spring</span></div>
                         <div class="stack-item"><img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="Python"><span>Python</span></div>
-                        <div class="stack-item"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Wordpress_logo.svg" alt="WP"><span>WP</span></div>
+                        <div class="stack-item"><img src="https://www.vectorlogo.zone/logos/wordpress/wordpress-icon.svg" alt="WP"><span>WP</span></div>
                         <div class="stack-item"><img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" alt="Docker"><span>Docker</span></div>
                         <div class="stack-item"><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" alt="Linux"><span>Linux</span></div>
                         <div class="stack-item"><img src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" alt="MySQL"><span>MySQL</span></div>
-                        <div class="stack-item"><img src="https://cdn.simpleicons.org/powerbi/F2C811" alt="PowerBI"><span>PowerBI</span></div>
+                        <div class="stack-item"><img src="https://upload.vectorlogo.zone/logos/microsoft_powerbi/images/985205ac-fb3d-4c80-97f4-7bc0fec8c67d.svg" alt="PowerBI"><span>PowerBI</span></div>
                         <div class="stack-item"><img src="https://www.vectorlogo.zone/logos/nginx/nginx-icon.svg" alt="Nginx"><span>Nginx</span></div>
                         <div class="stack-item"><img src="https://www.vectorlogo.zone/logos/twilio/twilio-icon.svg" alt="Twilio"><span>Twilio</span></div>
                         <div class="stack-item"><img src="https://cdn.simpleicons.org/n8n/FF6D5A" alt="n8n"><span>n8n</span></div>
@@ -107,28 +131,58 @@
                         <div class="stack-item"><img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" alt="Node"><span>Node</span></div>
                     </div>
                 </div>
-                <div>
-                    <div class="st">Confían en nosotros</div>
-                    <div class="client-grid">
-                        <div class="client-item"><img src="https://www.escobar.gob.ar/wp-content/uploads/2020/03/cropped-LogoEscobar2020ISO.png"><span>Escobar</span></div>
-                        <div class="client-item"><img src="https://dibrand.co/wp-content/uploads/2023/12/dibrand_1.svg"><span>DiBrand</span></div>
-                        <div class="client-item"><img src="https://media.licdn.com/dms/image/v2/D4D0BAQFcDyxZaS_s7w/company-logo_200_200/company-logo_200_200/0/1734974000342/perpetualtechnologies_logo?e=1768435200&v=beta&t=0geR963DBeARm5kS6jrPAh2iWNf-pm4MqiQWbDDrUdk"><span>Perpetual</span></div>
-                        <div class="client-item"><img src="https://www.colegioubaescobar.gob.ar/wp-content/uploads/2020/10/1588707305681.png"><span>Colegio UBA</span></div>
-                        <div class="client-item"><img src="https://www.teatroseminari.gob.ar/wp-content/uploads/2020/09/cropped-TeatroSeminariLogo.png"><span>Teatro Seminari</span></div>
-                        <div class="client-item"><img src="https://dijitalbloks.co.uk/wp-content/uploads/2024/12/Logo.png"><span>Dijital Bloks</span></div>
-                        <div class="client-item"><img src="https://logo.clearbit.com/kaleyra.com" onerror="this.style.display='none'" alt=""><span>Kaleyra</span></div>
-                        <div class="client-item"><img src="https://logo.clearbit.com/sinch.com" onerror="this.style.display='none'" alt=""><span>Sinch</span></div>
-                        <div class="client-item"><img src="https://logo.clearbit.com/movile.com" onerror="this.style.display='none'" alt=""><span>Movile</span></div>
-                    </div>
+            </div>
+            <div class="clients-row">
+                <div class="st">Confían en nosotros</div>
+                <div class="client-grid">
+                    <div class="client-item"><img src="https://www.escobar.gob.ar/wp-content/uploads/2020/03/cropped-LogoEscobar2020ISO.png" alt="Escobar"><span>Escobar</span></div>
+                    <div class="client-item"><img src="https://www.dibrand.co/logo_dibrand.svg" alt="DiBrand"><span>DiBrand</span></div>
+                    <div class="client-item"><img src="https://www.perpetualtech.ai/img/perpetual_og_1200x630.jpg" alt="Perpetual Technologies"><span>Perpetual</span></div>
+                    <div class="client-item"><img src="https://www.colegioubaescobar.gob.ar/wp-content/uploads/2020/10/1588707305681.png" alt="Colegio UBA"><span>Colegio UBA</span></div>
+                    <div class="client-item"><img src="https://www.teatroseminari.gob.ar/wp-content/uploads/2020/09/cropped-TeatroSeminariLogo.png" alt="Teatro Seminari"><span>Teatro Seminari</span></div>
+                    <div class="client-item"><img src="https://dijitalbloks.co.uk/assets/images/Logo.png" alt="Dijital Bloks"><span>Dijital Bloks</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upwork no permite extraer reseñas por API/scraping; las citas abajo coinciden con materiales CloudExperts del repo. Sustituí por texto literal del perfil Upwork si querés atribución "Cliente Upwork". -->
+        <div class="testimonials-section">
+            <p class="th">Lo que dicen quienes ya trabajaron con nosotros</p>
+            <p class="tsub">Proyectos reales, equipos reales. Más opiniones verificadas en <a href="https://www.upwork.com/freelancers/~01e041a1e7a13b650d" target="_blank" rel="noopener noreferrer">Upwork (Top Rated)</a>.</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="q">Leo comunica muy bien sus ideas y estrategias. Te apoya durante todo el camino.</p>
+                    <div class="a">— Paulo Gonzalez, ex Wavy</div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="q">Migrar con Leonardo fue directo y sin sorpresas.</p>
+                    <div class="a">— Perpetual Technologies</div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="q">Rescato su capacidad para solucionar problemas en forma ágil y dinámica.</p>
+                    <div class="a">— Nicolás Acosta, ex Chattigo</div>
                 </div>
             </div>
         </div>
 
         <div class="cta">
-            <span>Hablemos de tu proyecto sin compromiso — Respuesta en 24h:</span>
-            <a href="mailto:info@cloudexperts.com.ar">info@cloudexperts.com.ar</a>
-            <a href="tel:+5491167098413">+54 9 11 6709 8413</a>
-            <span style="font-weight: bold;">www.cloudexperts.com.ar</span>
+            <div class="cta-inner">
+                <div class="cta-pitch"><strong>Reservá una conversación de 15 minutos.</strong> En 48 horas podés tener el mapa de tu proyecto: claro, honesto y sin letra chica. Te respondemos en menos de 24 h.</div>
+                <div class="cta-channels">
+                    <a href="mailto:info@cloudexperts.com.ar" class="cta-contact">
+                        <svg class="cta-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        info@cloudexperts.com.ar
+                    </a>
+                    <a href="https://wa.me/5491167098413" target="_blank" rel="noopener noreferrer" class="cta-contact" title="Chatear por WhatsApp">
+                        <img class="cta-ico" src="https://cdn.simpleicons.org/whatsapp/ffffff" alt="" width="18" height="18">
+                        WhatsApp
+                    </a>
+                    <a href="https://www.cloudexperts.com.ar" target="_blank" rel="noopener noreferrer" class="cta-contact">
+                        <svg class="cta-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        www.cloudexperts.com.ar
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </body>
