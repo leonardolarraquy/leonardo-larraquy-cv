@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CloudExperts - Socio en IA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #3b82f6; --primary-dark: #1e40af; --text: #334155; }
+        * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; box-sizing: border-box; }
+        html, body { height: 100%; min-height: 210mm; margin: 0; }
+        body { font-family: 'Inter', sans-serif; padding: 0; color: var(--text); background: #e2e8f0; }
+        .page { width: 297mm; height: 210mm; padding: 5mm 8mm; margin: 0 auto; background: #fff; display: flex; flex-direction: column; overflow: hidden; }
+        .hero { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; padding: 10px 18px; border-radius: 6px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; flex-shrink: 0; }
+        .hero h1 { font-size: 22px; margin: 0; line-height: 1.2; font-weight: 700; }
+        .hero .sub { font-size: 14px; color: #93c5fd; margin-top: 2px; }
+        .hero-meta { font-size: 12px; opacity: 0.95; margin-top: 4px; }
+        .hero-right .badge-tag { border: 1px solid rgba(255,255,255,0.6); padding: 4px 12px; border-radius: 50px; font-weight: 700; font-size: 12px; }
+        .badges-row { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; }
+        .badge-pill { display: inline-flex; align-items: center; gap: 4px; background: rgba(255,255,255,0.2); padding: 4px 10px; border-radius: 50px; font-size: 11px; font-weight: 600; color: white; text-decoration: none; border: 1px solid rgba(255,255,255,0.4); }
+        .badge-pill img { height: 16px; }
+        .mid-bar { display: flex; gap: 12px; padding: 8px 12px; background: #eff6ff; border-radius: 6px; margin-bottom: 6px; flex-shrink: 0; font-size: 11px; }
+        .mid-bar .step { flex: 1; display: flex; gap: 6px; align-items: flex-start; }
+        .mid-bar .step .n { font-size: 18px; font-weight: 800; color: var(--primary); }
+        .mid-bar .step b { display: block; font-size: 12px; color: var(--primary-dark); margin-bottom: 2px; }
+        .mid-bar .step .t { font-size: 11px; line-height: 1.35; color: #475569; }
+        .trust-ul { list-style: none; margin: 0; padding: 0; font-size: 11px; }
+        .trust-ul li { padding: 2px 0; }
+        .trust-ul li::before { content: "✓ "; color: var(--primary); font-weight: bold; }
+        .grid-main { display: grid; grid-template-columns: 1.3fr 1fr; gap: 8px; flex: 1; min-height: 0; }
+        .col-left { display: flex; flex-direction: column; padding: 8px 10px; min-height: 0; }
+        .col-right { display: grid; grid-template-rows: 1fr 1fr; gap: 6px; min-height: 0; }
+        .st { font-size: 15px; font-weight: 700; color: var(--primary-dark); margin-bottom: 6px; border-bottom: 2px solid var(--primary); padding-bottom: 4px; flex-shrink: 0; }
+        .sol { padding: 8px 10px; background: #f1f5f9; border-radius: 4px; font-size: 12px; line-height: 1.4; margin-bottom: 6px; border-left: 4px solid var(--primary); }
+        .sol b { color: var(--primary-dark); font-size: 13px; display: block; margin-bottom: 2px; }
+        .stack-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(4, 1fr); gap: 6px; padding: 8px; background: #f8fafc; border-radius: 6px; min-height: 0; }
+        .stack-item { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 4px; }
+        .stack-item img { width: 36px; height: 36px; object-fit: contain; }
+        .stack-item span { font-size: 10px; font-weight: 600; color: #475569; margin-top: 2px; }
+        .client-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); gap: 6px; padding: 8px; background: #f8fafc; border-radius: 6px; min-height: 0; align-items: center; justify-items: center; }
+        .client-item { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .client-item img { max-height: 42px; max-width: 64px; object-fit: contain; }
+        .client-item span { font-size: 10px; font-weight: bold; color: #555; margin-top: 2px; }
+        .testimonial { padding: 8px 10px; background: #eff6ff; border-radius: 4px; border-left: 4px solid var(--primary); font-size: 12px; margin-top: 6px; }
+        .testimonial .q { font-style: italic; color: #475569; }
+        .testimonial .a { font-weight: 700; color: var(--primary-dark); margin-top: 4px; }
+        .cta { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; padding: 8px 16px; border-radius: 6px; display: flex; justify-content: space-between; align-items: center; margin-top: 6px; flex-wrap: wrap; gap: 8px; font-size: 13px; flex-shrink: 0; }
+        .cta a { color: #93c5fd; font-weight: bold; text-decoration: none; }
+        @media print { body { background: none; } .page { margin: 0; box-shadow: none; width: 297mm; height: 210mm; } @page { size: landscape; margin: 0; } }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="hero">
+            <div>
+                <h1>¿Querés sumar IA sin contratar un equipo?</h1>
+                <p class="sub">CloudExperts.com.ar — Te acompañamos desde el día 1. Cloud + Full-stack + AI.</p>
+                <p class="hero-meta">Argentina · Cloud · AI · 23 años · Top Rated</p>
+                <div class="badges-row">
+                    <a href="https://www.upwork.com/freelancers/~01e041a1e7a13b650d" target="_blank" class="badge-pill"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Upwork-logo.svg" alt="Upwork">Top Rated</a>
+                    <a href="https://www.credly.com/users/leonardo-lopez-larraquy/" target="_blank" class="badge-pill"><img src="https://images.icon-icons.com/3911/PNG/128/credly_logo_icon_247258.png" alt="Credly">AWS · Big Data</a>
+                    <a href="https://www.linkedin.com/in/leonardolarraquy/" target="_blank" class="badge-pill"><img src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="LinkedIn">Solutions Architect</a>
+                </div>
+            </div>
+            <div class="hero-right"><span class="badge-tag">SOCIO EN IA</span></div>
+        </div>
+
+        <div class="mid-bar">
+            <div class="step"><span class="n">1</span><div><b>Charlamos 15 min</b><span class="t">Nos contás tu idea. Definimos un caso de uso concreto.</span></div></div>
+            <div class="step"><span class="n">2</span><div><b>Proof of concept</b><span class="t">Un MVP chico para validar. Sin compromisos largos.</span></div></div>
+            <div class="step"><span class="n">3</span><div><b>Escalamos si funciona</b><span class="t">Integración con tus sistemas. Cloud, APIs, datos.</span></div></div>
+            <div style="border-left: 1px solid #bfdbfe; padding-left: 12px; min-width: 140px;">
+                <b style="font-size: 12px; color: var(--primary-dark); display: block; margin-bottom: 4px;">Sin compromisos</b>
+                <ul class="trust-ul"><li>Charlamos gratis</li><li>Respuesta &lt;24h</li><li>PoC con alcance claro</li><li>Presupuesto por fases</li></ul>
+            </div>
+        </div>
+
+        <div class="grid-main">
+            <div class="col-left">
+                <div class="st">Nuestras soluciones</div>
+                <div class="sol"><b>Chatbots y asistentes</b>Integrados a tu web, WhatsApp o sistema interno. Respuestas inteligentes 24/7. Escalables y seguros en Cloud.</div>
+                <div class="sol"><b>Análisis de datos con IA</b>Extracción de insights, resúmenes, clasificación. Decisiones más rápidas. PowerBI, dashboards, reportes automáticos.</div>
+                <div class="sol"><b>Automatización inteligente</b>Procesos que hoy requieren juicio humano. IA que aprende y mejora. Menos errores, más productividad.</div>
+                <div class="sol"><b>Integración AWS/Azure AI</b>Bedrock, OpenAI, modelos open. Seguridad, escalabilidad y control. Full-stack listo para producción.</div>
+                <div class="sol"><b>Full-stack + IA</b>Apps que combinan tu lógica con capacidades de IA. MVP en semanas, no meses. Sin necesidad de un departamento de IA.</div>
+                <div class="testimonial"><div class="q">"Trabajamos en implementaciones de Bot. Su capacidad para solucionar problemas en forma ágil."</div><div class="a">— Nicolás Acosta</div></div>
+            </div>
+            <div class="col-right">
+                <div>
+                    <div class="st">Stack tecnológico</div>
+                    <div class="stack-grid">
+                        <div class="stack-item"><img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS"><span>AWS</span></div>
+                        <div class="stack-item"><img src="https://cdn.simpleicons.org/openai/412991" alt="OpenAI"><span>OpenAI</span></div>
+                        <div class="stack-item"><img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="Python"><span>Python</span></div>
+                        <div class="stack-item"><img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" alt="Node"><span>Node</span></div>
+                        <div class="stack-item"><img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" alt="Docker"><span>Docker</span></div>
+                        <div class="stack-item"><img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="React"><span>React</span></div>
+                        <div class="stack-item"><img src="https://cdn.worldvectorlogo.com/logos/azure-1.svg" alt="Azure"><span>Azure</span></div>
+                        <div class="stack-item"><img src="https://www.vectorlogo.zone/logos/java/java-icon.svg" alt="Java"><span>Java</span></div>
+                        <div class="stack-item"><img src="https://cdn.simpleicons.org/n8n/FF6D5A" alt="n8n"><span>n8n</span></div>
+                        <div class="stack-item"><img src="https://www.vectorlogo.zone/logos/nginx/nginx-icon.svg" alt="Nginx"><span>Nginx</span></div>
+                        <div class="stack-item"><img src="https://cdn.simpleicons.org/powerbi/F2C811" alt="PowerBI"><span>PowerBI</span></div>
+                        <div class="stack-item"><img src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" alt="MySQL"><span>MySQL</span></div>
+                        <div class="stack-item"><img src="https://www.vectorlogo.zone/logos/oracle/oracle-icon.svg" alt="Oracle"><span>Oracle</span></div>
+                        <div class="stack-item"><img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="Spring"><span>Spring</span></div>
+                        <div class="stack-item"><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" alt="Linux"><span>Linux</span></div>
+                        <div class="stack-item"><img src="https://www.vectorlogo.zone/logos/twilio/twilio-icon.svg" alt="Twilio"><span>Twilio</span></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="st">Confían en nosotros</div>
+                    <div class="client-grid">
+                        <div class="client-item"><img src="https://www.escobar.gob.ar/wp-content/uploads/2020/03/cropped-LogoEscobar2020ISO.png"><span>Escobar</span></div>
+                        <div class="client-item"><img src="https://dibrand.co/wp-content/uploads/2023/12/dibrand_1.svg"><span>DiBrand</span></div>
+                        <div class="client-item"><img src="https://media.licdn.com/dms/image/v2/D4D0BAQFcDyxZaS_s7w/company-logo_200_200/company-logo_200_200/0/1734974000342/perpetualtechnologies_logo?e=1768435200&v=beta&t=0geR963DBeARm5kS6jrPAh2iWNf-pm4MqiQWbDDrUdk"><span>Perpetual</span></div>
+                        <div class="client-item"><img src="https://www.colegioubaescobar.gob.ar/wp-content/uploads/2020/10/1588707305681.png"><span>Colegio UBA</span></div>
+                        <div class="client-item"><img src="https://www.teatroseminari.gob.ar/wp-content/uploads/2020/09/cropped-TeatroSeminariLogo.png"><span>Teatro Seminari</span></div>
+                        <div class="client-item"><img src="https://dijitalbloks.co.uk/wp-content/uploads/2024/12/Logo.png"><span>Dijital Bloks</span></div>
+                        <div class="client-item"><img src="https://logo.clearbit.com/kaleyra.com" onerror="this.style.display='none'" alt=""><span>Kaleyra</span></div>
+                        <div class="client-item"><img src="https://logo.clearbit.com/sinch.com" onerror="this.style.display='none'" alt=""><span>Sinch</span></div>
+                        <div class="client-item"><img src="https://logo.clearbit.com/movile.com" onerror="this.style.display='none'" alt=""><span>Movile</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta">
+            <span>Charlamos de tu primer proyecto con IA — Respuesta en 24h:</span>
+            <a href="mailto:info@cloudexperts.com.ar">info@cloudexperts.com.ar</a>
+            <a href="tel:+5491167098413">+54 9 11 6709 8413</a>
+            <span style="font-weight: bold;">www.cloudexperts.com.ar</span>
+        </div>
+    </div>
+</body>
+</html>

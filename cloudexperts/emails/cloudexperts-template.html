@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CloudExperts - Socio Tecnológico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #3b82f6; --primary-dark: #1e40af; --text: #334155; }
+        * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; color: var(--text); background: #e2e8f0; }
+        .page { width: 297mm; height: 210mm; padding: 6mm 10mm; margin: 0 auto; background: #f8fafc; display: flex; flex-direction: column; overflow: hidden; }
+        .hero { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; padding: 8px 20px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+        .hero h1 { font-size: 18px; margin: 0; line-height: 1.2; }
+        .hero .sub { font-size: 12px; color: #93c5fd; margin-top: 2px; }
+        .hero .meta { font-size: 9px; opacity: 0.95; margin-top: 2px; }
+        .hero-right { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+        .badge-tag { border: 1px solid rgba(255,255,255,0.6); padding: 3px 10px; border-radius: 50px; font-weight: 700; font-size: 10px; }
+        .badges-row { display: flex; gap: 6px; flex-wrap: wrap; }
+        .badge-pill { display: inline-flex; align-items: center; gap: 4px; background: rgba(255,255,255,0.2); padding: 3px 8px; border-radius: 50px; font-size: 8px; font-weight: 600; border: 1px solid rgba(255,255,255,0.4); }
+        .badge-pill a { color: white; text-decoration: none; display: flex; align-items: center; gap: 4px; }
+        .badge-pill img { height: 14px; }
+        .grid-4 { display: grid; grid-template-columns: 1.15fr 1fr 0.9fr 0.95fr; gap: 8px; flex-grow: 1; min-height: 0; }
+        .col { display: flex; flex-direction: column; background: white; padding: 8px 10px; border-radius: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+        .st { font-size: 12px; font-weight: 700; color: var(--primary-dark); margin-bottom: 6px; border-bottom: 2px solid var(--primary); padding-bottom: 2px; }
+        .step { display: flex; gap: 8px; margin-bottom: 6px; padding: 6px 8px; background: #eff6ff; border-radius: 5px; border-left: 3px solid var(--primary); }
+        .step .n { font-size: 14px; font-weight: 800; color: var(--primary); min-width: 18px; }
+        .step .t { font-size: 10px; line-height: 1.35; }
+        .step b { display: block; font-size: 10px; color: var(--primary-dark); margin-bottom: 1px; }
+        .obj { padding: 8px 10px; background: #dbeafe; border-radius: 5px; margin-top: 4px; }
+        .obj .t { font-size: 10px; font-weight: 700; color: var(--primary-dark); margin-bottom: 4px; }
+        .obj ul { margin: 0; padding: 0; list-style: none; font-size: 9px; line-height: 1.7; color: #475569; }
+        .obj li::before { content: "✓ "; color: var(--primary); font-weight: bold; }
+        .sol { padding: 5px 8px; background: #f8fafc; border-radius: 4px; font-size: 9px; line-height: 1.35; margin-bottom: 4px; }
+        .sol b { color: var(--primary-dark); font-size: 10px; display: block; margin-bottom: 1px; }
+        .expertise { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 8px; }
+        .expertise img { width: 22px; height: 22px; object-fit: contain; }
+        .expertise .label { font-size: 8px; color: #64748b; font-weight: 600; }
+        .client-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; text-align: center; }
+        .client-item { display: flex; flex-direction: column; align-items: center; }
+        .client-item img { max-height: 38px; object-fit: contain; }
+        .client-item span { font-size: 7px; font-weight: bold; color: #555; margin-top: 2px; }
+        .testimonial { padding: 6px 8px; background: #eff6ff; border-radius: 4px; border-left: 3px solid var(--primary); font-size: 9px; margin-top: 8px; }
+        .testimonial .q { font-style: italic; color: #475569; }
+        .testimonial .a { font-weight: 700; color: var(--primary-dark); margin-top: 2px; }
+        .cta { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; padding: 6px 18px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; margin-top: 6px; flex-wrap: wrap; gap: 6px; font-size: 11px; }
+        .cta a { color: #93c5fd; font-weight: bold; text-decoration: none; }
+        @media print { body { background: none; } .page { margin: 0; box-shadow: none; width: 297mm; height: 210mm; } @page { size: landscape; margin: 0; } }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <div class="hero">
+            <div>
+                <h1>¿IT te complica? Nosotros lo resolvemos.</h1>
+                <p class="sub">Consultoría cloud, desarrollo y automatización. Hablamos tu idioma.</p>
+                <p class="meta">Argentina · 50+ proyectos · 20+ años</p>
+                <div class="badges-row">
+                    <a href="https://www.upwork.com/freelancers/~01e041a1e7a13b650d" target="_blank" class="badge-pill"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Upwork-logo.svg" alt="Upwork"><span>Top Rated</span></a>
+                    <a href="https://www.credly.com/users/leonardo-lopez-larraquy/" target="_blank" class="badge-pill"><img src="https://images.icon-icons.com/3911/PNG/128/credly_logo_icon_247258.png" alt="Credly"><span>AWS · Java</span></a>
+                    <a href="https://www.linkedin.com/in/leonardolarraquy/" target="_blank" class="badge-pill"><img src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="LinkedIn"><span>LinkedIn</span></a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <span class="badge-tag">SOCIO TECNOLÓGICO</span>
+            </div>
+        </div>
+
+        <div class="grid-4">
+            <div class="col">
+                <div class="st">Cómo empezamos</div>
+                <div class="step"><span class="n">1</span><div class="t"><b>Charlamos 15 min</b>Vos contás, nosotros entendemos. Sin tecnicismos.</div></div>
+                <div class="step"><span class="n">2</span><div class="t"><b>Propuesta en 48h</b>Alcance, tiempos y presupuesto. Revisás tranquilo.</div></div>
+                <div class="step"><span class="n">3</span><div class="t"><b>Arrancamos cuando vos digas</b>Cero presión. Vos elegís el ritmo.</div></div>
+                <div class="obj"><div class="t">Sin compromisos</div><ul><li>Consultoría gratis</li><li>Respuesta &lt;24h</li><li>Propuesta sin obligación</li><li>Presupuesto claro</li></ul></div>
+            </div>
+            <div class="col">
+                <div class="st">Qué hacemos</div>
+                <div class="sol"><b>Automatización</b>Menos copiar y pegar. Más tiempo para vender.</div>
+                <div class="sol"><b>Web y apps</b>Tu negocio online y en el celular.</div>
+                <div class="sol"><b>Rescate</b>Sistemas que fallan: los arreglamos.</div>
+                <div class="sol"><b>Cloud</b>Servidores que escalan. Pagás lo que usás.</div>
+                <div class="sol"><b>Datos</b>Mejores decisiones con números.</div>
+            </div>
+            <div class="col">
+                <div class="st">Expertise</div>
+                <div class="expertise">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
+                    <img src="https://www.vectorlogo.zone/logos/java/java-icon.svg" alt="Java">
+                    <img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" alt="Docker">
+                    <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="React">
+                    <img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="Python">
+                    <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" alt="Node">
+                    <span class="label">Full-stack · Cloud · Consultoría</span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="st">Ellos confían</div>
+                <div class="client-grid">
+                    <div class="client-item"><img src="https://www.escobar.gob.ar/wp-content/uploads/2020/03/cropped-LogoEscobar2020ISO.png"><span>Escobar</span></div>
+                    <div class="client-item"><img src="https://dibrand.co/wp-content/uploads/2023/12/dibrand_1.svg"><span>DiBrand</span></div>
+                    <div class="client-item"><img src="https://media.licdn.com/dms/image/v2/D4D0BAQFcDyxZaS_s7w/company-logo_200_200/company-logo_200_200/0/1734974000342/perpetualtechnologies_logo?e=1768435200&v=beta&t=0geR963DBeARm5kS6jrPAh2iWNf-pm4MqiQWbDDrUdk"><span>Perpetual</span></div>
+                    <div class="client-item"><img src="https://dijitalbloks.co.uk/wp-content/uploads/2024/12/Logo.png"><span>Dijital Bloks</span></div>
+                </div>
+                <div class="testimonial"><div class="q">"Migrar con Leonardo fue directo y sin sorpresas."</div><div class="a">— Perpetual Technologies</div></div>
+            </div>
+        </div>
+
+        <div class="cta">
+            <span>Hablemos sin compromiso — Respuesta en 24h:</span>
+            <a href="mailto:info@cloudexperts.com.ar">info@cloudexperts.com.ar</a>
+            <a href="tel:+5491167098413">+54 9 11 6709 8413</a>
+            <span style="font-weight: bold;">www.cloudexperts.com.ar</span>
+        </div>
+    </div>
+
+</body>
+</html>
