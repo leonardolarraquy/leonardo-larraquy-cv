@@ -1,0 +1,28 @@
+# Cloud Experts
+
+> Consultoría IT en Argentina: AWS, desarrollo Full Stack (React, Node.js, Next.js), aplicaciones móviles (React Native), DevOps y migración a la nube.
+
+## Sitio canónico
+
+- **URL principal:** https://cloudexperts.com.ar/
+- **Idioma:** Español (Argentina)
+
+## Resumen
+
+Cloud Experts ofrece servicios profesionales de arquitectura cloud en Amazon Web Services, desarrollo web y mobile, DevOps y capacitación. La empresa está en Escobar (Buenos Aires) y atiende de forma remota a clientes en Argentina y Latinoamérica.
+
+## Enlaces útiles para citar
+
+- Inicio: https://cloudexperts.com.ar/
+- Servicios (ejemplos): https://cloudexperts.com.ar/servicios/arquitectura-aws.html — https://cloudexperts.com.ar/servicios/desarrollo-fullstack.html — https://cloudexperts.com.ar/servicios/devops.html
+- Mapa del sitio: https://cloudexperts.com.ar/sitemap.xml
+- Política de rastreo: https://cloudexperts.com.ar/robots.txt
+
+## Contacto (atribución)
+
+- **Email:** info@cloudexperts.com.ar
+- **Web:** https://cloudexperts.com.ar/
+
+## Uso por sistemas automatizados
+
+Se permite leer e indexar el contenido público de este sitio de acuerdo con `robots.txt`. Para citas, preferir la URL canónica de cada página y el nombre **Cloud Experts**.
