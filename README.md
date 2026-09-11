@@ -1,11 +1,25 @@
 # leonardo-larraquy-cv
 
-Personal WEBSITE for Leonardo Lopez Larraquy
+Monorepo with two **independent** static sites:
 
-Here is my Linkedin: https://www.linkedin.com/in/leonardolarraquy/
+| Folder | Domain | Description |
+|--------|--------|-------------|
+| [`leonardolarraquy/`](leonardolarraquy/) | [leonardolarraquy.com.ar](https://www.leonardolarraquy.com.ar/) | Personal CV portfolio (HTML/CSS/JS) |
+| [`cloudexperts/`](cloudexperts/) | [cloudexperts.com.ar](https://cloudexperts.com.ar/) | Cloud Experts business site (React + Vite) |
 
-Feel free to download it and implement your own! I'm using CloudFlare Pages to delopoy it.
+Each site has its own assets, deploy target, and domain. They do not load resources from each other.
 
-The site is published at https://www.leonardolarraquy.com.ar/
+## Deploy
 
-I'm only using HTML, Javascript and CSS
+**Personal CV:** upload `leonardolarraquy/` to its hosting.
+
+**Cloud Experts:**
+
+```bash
+cd cloudexperts/web
+npm install
+npm run build
+# Deploy cloudexperts/web/dist/ to S3 + CloudFront
+```
+
+See [cloudexperts/README.md](cloudexperts/README.md) for full details.

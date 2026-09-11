@@ -1,2 +1,4 @@
 /.DS_Store
 /.project
+cloudexperts/web/node_modules/
+cloudexperts/web/dist/
