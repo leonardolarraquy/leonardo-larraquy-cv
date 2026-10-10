@@ -21,7 +21,7 @@ export function ContactForm() {
           onSubmit={handleSubmit}
         >
           <h3 className="mb-4 text-xl font-medium text-white">
-            Solicita tu Consultoría Gratuita
+            Pedí tu consultoría gratuita
           </h3>
           <div>
             <label htmlFor="user_name" className="mb-2 block text-sm font-medium text-white/80">
@@ -70,7 +70,7 @@ export function ContactForm() {
               name="message"
               rows={5}
               required
-              placeholder="Cuéntame sobre tu proyecto, objetivos y desafíos técnicos..."
+              placeholder="Contanos sobre tu proyecto, objetivos y desafíos técnicos..."
               className="w-full resize-none rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-white placeholder-white/40 backdrop-blur-sm focus:border-white/40 focus:outline-none"
             />
           </div>

@@ -20,6 +20,13 @@ let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <priority>1.0</priority>
   </url>
 
+  <url>
+    <loc>${BASE_URL}/privacidad.html</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
 `
 
 data.services.forEach((service: { name: string; slug: string }) => {

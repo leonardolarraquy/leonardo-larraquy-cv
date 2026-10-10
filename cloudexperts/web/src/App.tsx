@@ -4,6 +4,7 @@ import { ServicePage } from '@/pages/ServicePage'
 import { TechnologyPage } from '@/pages/TechnologyPage'
 import { LocationPage } from '@/pages/LocationPage'
 import { ProfessionalPage } from '@/pages/ProfessionalPage'
+import { PrivacyPage } from '@/pages/PrivacyPage'
 
 export function AppRoutes() {
   return (
@@ -13,6 +14,7 @@ export function AppRoutes() {
       <Route path="/tecnologias/:slug.html" element={<TechnologyPage />} />
       <Route path="/ubicaciones/:slug.html" element={<LocationPage />} />
       <Route path="/profesionales/:slug.html" element={<ProfessionalPage />} />
+      <Route path="/privacidad.html" element={<PrivacyPage />} />
     </Routes>
   )
 }

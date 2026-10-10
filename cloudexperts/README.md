@@ -71,7 +71,6 @@ cloudexperts/
     dist/               Build output → deploy to S3/CloudFront
   data.json             Shared data (synced to web/src/data/)
   _legacy/              Previous static HTML site (archived)
-  emails/               Email templates (unchanged)
 ```
 
 ## Analytics (preserved)

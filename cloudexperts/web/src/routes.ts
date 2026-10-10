@@ -6,7 +6,10 @@ export interface RouteDefinition {
 }
 
 export function getAllRoutes(): RouteDefinition[] {
-  const routes: RouteDefinition[] = [{ path: '/', outputPath: 'index.html' }]
+  const routes: RouteDefinition[] = [
+    { path: '/', outputPath: 'index.html' },
+    { path: '/privacidad.html', outputPath: 'privacidad.html' },
+  ]
 
   services.forEach((s) => {
     routes.push({

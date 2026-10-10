@@ -23,7 +23,7 @@ const organizationJsonLd = {
   numberOfEmployees: '5-10',
   serviceArea: { '@type': 'Country', name: 'Argentina' },
   sameAs: [
-    'https://www.linkedin.com/in/leonardolarraquy/',
+    'https://www.linkedin.com/company/cloudexpertslatam/',
     'https://www.upwork.com/freelancers/leonardol25',
   ],
 }

@@ -25,18 +25,6 @@
       }
       gtag('js', new Date())
       gtag('config', 'G-71DZEPD7QH')
-      window.gtagSendEvent = function (url) {
-        var callback = function () {
-          if (typeof url === 'string') {
-            window.location = url
-          }
-        }
-        gtag('event', 'conversion_event_purchase', {
-          event_callback: callback,
-          event_timeout: 2000,
-        })
-        return false
-      }
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

@@ -46,10 +46,6 @@ export function SectionTecnologias() {
                     alt={tech.name}
                     className="max-h-16 max-w-full object-contain md:max-h-20"
                     loading="lazy"
-                    onError={(e) => {
-                      const img = e.target as HTMLImageElement
-                      if (tech.fallback) img.src = tech.fallback
-                    }}
                   />
                 )}
               </div>

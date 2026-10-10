@@ -1,12 +1,7 @@
 import { ChevronRight } from 'lucide-react'
 import { LeftAccentBadge } from '@/components/GlassPanel'
 import { RevealOnScroll } from '@/components/RevealOnScroll'
-import {
-  CONTACT_EMAIL,
-  heroServices,
-  LEONARDO_PORTRAIT,
-  WHATSAPP_URL,
-} from '@/data/constants'
+import { CONTACT_EMAIL, heroServices, WHATSAPP_URL } from '@/data/constants'
 
 export function SectionHero() {
   return (
@@ -48,27 +43,20 @@ export function SectionHero() {
         </div>
 
         <RevealOnScroll delay={420}>
-          <div className="flex items-center gap-4 rounded-xl bg-white/15 p-3 backdrop-blur-md">
-            <img
-              src={LEONARDO_PORTRAIT}
-              alt="Leonardo Larraquy, fundador de Cloud Experts"
-              className="h-24 w-20 rounded-lg object-cover"
-            />
-            <div className="flex flex-col gap-1.5 pr-2">
-              <p className="text-sm font-medium text-white">Habla con Leonardo</p>
-              <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/60">
-                Fundador de Cloud Experts
-              </p>
-              <a
-                href={WHATSAPP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-1.5 inline-flex items-center gap-1 rounded-full bg-white px-4 py-2 text-xs font-medium text-black transition-colors duration-300 hover:bg-white/85"
-              >
-                Consultoría gratuita
-                <ChevronRight size={14} />
-              </a>
-            </div>
+          <div className="flex flex-col gap-1.5 rounded-xl bg-white/15 p-4 backdrop-blur-md">
+            <p className="text-sm font-medium text-white">Habla con nosotros</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/60">
+              Equipo de Cloud Experts
+            </p>
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-1.5 inline-flex items-center gap-1 rounded-full bg-white px-4 py-2 text-xs font-medium text-black transition-colors duration-300 hover:bg-white/85"
+            >
+              Consultoría gratuita
+              <ChevronRight size={14} />
+            </a>
           </div>
         </RevealOnScroll>
       </div>
